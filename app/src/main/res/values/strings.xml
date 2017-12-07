@@ -84,4 +84,55 @@
     <string name="ny_answer_9">Bulgaria. These minutes are called \«New Year's minutes for kisses\».</string>
     <string name="ny_answer_10">Germany. Each shape symbolizes an aspect of life – love, prosperity etc."</string>
 
+    <!--Emoji Quiz Answer Variants-->
+    <string name="em_q1_var_1">The Village</string>
+    <string name="em_q1_var_2">Over the hedge</string>
+    <string name="em_q1_var_3">Forrest Gump</string>
+    <string name="em_q1_var_4">Into the Woods</string>
+
+    <string name="em_q2_var_1">Cherries</string>
+    <string name="em_q2_var_2">Olives</string>
+    <string name="em_q2_var_3">Grapes</string>
+    <string name="em_q2_var_4">Peas</string>
+
+    <string name="em_q3_var_1">USA</string>
+    <string name="em_q3_var_2">France</string>
+    <string name="em_q3_var_3">Poland</string>
+    <string name="em_q3_var_4">Sweden</string>
+
+    <string name="em_q4_var_1">Croatia</string>
+    <string name="em_q4_var_2">Finland</string>
+    <string name="em_q4_var_3">Egypt</string>
+    <string name="em_q4_var_4">Greece</string>
+
+    <string name="em_q5_var_1">Austria</string>
+    <string name="em_q5_var_2">Cyprus</string>
+    <string name="em_q5_var_3">Italy</string>
+    <string name="em_q5_var_4">Canada</string>
+
+    <string name="em_q6_var_1">Visiting temples to pray for the departed and for good harvest</string>
+    <string name="em_q6_var_2">Dressing up in the costumes of cartoon heroes</string>
+    <string name="em_q6_var_3">Inviting strangers to the house</string>
+    <string name="em_q6_var_4">Temple bells ringing 108 times</string>
+
+    <string name="em_q7_var_1">Raisin</string>
+    <string name="em_q7_var_2">Dried apricot</string>
+    <string name="em_q7_var_3">Mushroom</string>
+    <string name="em_q7_var_4">Bean</string>
+
+    <string name="em_q8_var_1">Throwing buckets of water out of their windows</string>
+    <string name="em_q8_var_2">Standing on a chair and jumping from it as the clock strikes twelve</string>
+    <string name="em_q8_var_3">Collecting dishes all the year around and throwing them at the front door on the New Year’s Eve</string>
+    <string name="em_q8_var_4">Burning the Scarecrow</string>
+
+    <string name="em_q9_var_1">Norway</string>
+    <string name="em_q9_var_2">Bulgaria</string>
+    <string name="em_q9_var_3">Ukraine</string>
+    <string name="em_q9_var_4">Albania</string>
+
+    <string name="em_q10_var_1">Germany</string>
+    <string name="em_q10_var_2">Israel</string>
+    <string name="em_q10_var_3">Montenegro</string>
+    <string name="em_q10_var_4">Portugal</string>
+
 </resources>

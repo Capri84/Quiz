@@ -17,4 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent openNYQuiz = new Intent(this, NewYearQuizActivity.class);
         startActivity(openNYQuiz);
     }
+
+    public void openEmojiQuiz(View view) {
+        Intent openEmojiQuiz = new Intent(this, EmojiActivity.class);
+        startActivity(openEmojiQuiz);
+    }
 }

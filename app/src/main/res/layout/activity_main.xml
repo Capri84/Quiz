@@ -56,7 +56,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="bottom|center_horizontal"
-                android:src="@drawable/emoji1" />
+                android:src="@drawable/emoji1"
+                android:onClick="openEmojiQuiz"/>
         </LinearLayout>
 
         <LinearLayout

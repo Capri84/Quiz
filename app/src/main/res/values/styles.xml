@@ -15,6 +15,18 @@
         <item name="android:gravity">bottom</item>
     </style>
 
+    <!-- Emoji variants margins-->
+    <style name="emoji_var_margins">
+        <item name="android:layout_marginLeft">@dimen/layout_margin1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- Emoji answer margins-->
+    <style name="emoji_answer_margins">
+        <item name="android:layout_marginRight">@dimen/layout_margin1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
     <!-- TextView margins-->
     <style name="TextView_margins">
         <item name="android:layout_marginLeft">@dimen/layout_margin1</item>
@@ -37,6 +49,15 @@
         <item name="android:layout_marginLeft">@dimen/layout_margin3</item>
         <item name="android:layout_marginRight">@dimen/layout_margin3</item>
         <item name="android:background">@color/button_background</item>
+    </style>
+
+    <!-- TextView Emoji questions style-->
+    <style name="TextView_emoji_questions">
+        <item name="android:layout_margin">@dimen/layout_margin3</item>
+        <item name="android:textSize">@dimen/text_size2</item>
+        <item name="android:textColor">@color/questions_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/borders</item>
     </style>
 
 </resources>

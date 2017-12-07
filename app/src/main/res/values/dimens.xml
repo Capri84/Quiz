@@ -7,4 +7,5 @@
     <dimen name="text_size">24sp</dimen>
     <dimen name="layout_margin3">16dp</dimen>
     <dimen name="text_size2">16sp</dimen>
+    <dimen name="border">2dp</dimen>
 </resources>
