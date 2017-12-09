@@ -8,6 +8,7 @@
     <string name="wrongAnswer">Wrong answer</string>
     <string name="nextQuestion">Next Question</string>
     <string name="not_chosen">"Please, choose the answer to proceed"</string>
+    <string name="emoji_quiz">"Emoji Quiz"</string>
 
     <!--New Year Quiz Questions-->
     <string name="ny_question_1">In this country tradition requires you to write your New Year’s wish on a piece of paper and then set it alight, drop the remains into your champagne glass and drink it before the clock goes past 12.</string>
@@ -90,49 +91,49 @@
     <string name="em_q1_var_3">Forrest Gump</string>
     <string name="em_q1_var_4">Into the Woods</string>
 
-    <string name="em_q2_var_1">Cherries</string>
-    <string name="em_q2_var_2">Olives</string>
-    <string name="em_q2_var_3">Grapes</string>
-    <string name="em_q2_var_4">Peas</string>
+    <string name="em_q2_var_1">E.T. the Extra-Terrestrial</string>
+    <string name="em_q2_var_2">Edge of Tomorrow</string>
+    <string name="em_q2_var_3">Cowboys and Aliens</string>
+    <string name="em_q2_var_4">Men in Black</string>
 
-    <string name="em_q3_var_1">USA</string>
-    <string name="em_q3_var_2">France</string>
-    <string name="em_q3_var_3">Poland</string>
-    <string name="em_q3_var_4">Sweden</string>
+    <string name="em_q3_var_1">Eat Pray Love</string>
+    <string name="em_q3_var_2">Breakfast at Tiffany\'s</string>
+    <string name="em_q3_var_3">Kingsman: The Golden Circle</string>
+    <string name="em_q3_var_4">Soul Kitchen</string>
 
-    <string name="em_q4_var_1">Croatia</string>
-    <string name="em_q4_var_2">Finland</string>
-    <string name="em_q4_var_3">Egypt</string>
-    <string name="em_q4_var_4">Greece</string>
+    <string name="em_q4_var_1">Mask</string>
+    <string name="em_q4_var_2">Shrek</string>
+    <string name="em_q4_var_3">Hulk</string>
+    <string name="em_q4_var_4">The Green Lantern</string>
 
-    <string name="em_q5_var_1">Austria</string>
-    <string name="em_q5_var_2">Cyprus</string>
-    <string name="em_q5_var_3">Italy</string>
-    <string name="em_q5_var_4">Canada</string>
+    <string name="em_q5_var_1">Hush</string>
+    <string name="em_q5_var_2">The Collector</string>
+    <string name="em_q5_var_3">The Silence of the Lambs</string>
+    <string name="em_q5_var_4">Black Sheep</string>
 
-    <string name="em_q6_var_1">Visiting temples to pray for the departed and for good harvest</string>
-    <string name="em_q6_var_2">Dressing up in the costumes of cartoon heroes</string>
-    <string name="em_q6_var_3">Inviting strangers to the house</string>
-    <string name="em_q6_var_4">Temple bells ringing 108 times</string>
+    <string name="em_q6_var_1">Cinderella</string>
+    <string name="em_q6_var_2">Confessions of a Shopaholic</string>
+    <string name="em_q6_var_3">Coco before Chanel</string>
+    <string name="em_q6_var_4">The Devil Wears Prada</string>
 
-    <string name="em_q7_var_1">Raisin</string>
-    <string name="em_q7_var_2">Dried apricot</string>
-    <string name="em_q7_var_3">Mushroom</string>
-    <string name="em_q7_var_4">Bean</string>
+    <string name="em_q7_var_1">Signs</string>
+    <string name="em_q7_var_2">Children of the Corn</string>
+    <string name="em_q7_var_3">The Catcher in the Rye</string>
+    <string name="em_q7_var_4">Knowing</string>
 
-    <string name="em_q8_var_1">Throwing buckets of water out of their windows</string>
-    <string name="em_q8_var_2">Standing on a chair and jumping from it as the clock strikes twelve</string>
-    <string name="em_q8_var_3">Collecting dishes all the year around and throwing them at the front door on the New Year’s Eve</string>
-    <string name="em_q8_var_4">Burning the Scarecrow</string>
+    <string name="em_q8_var_1">Limitless</string>
+    <string name="em_q8_var_2">The Matrix</string>
+    <string name="em_q8_var_3">Jobs</string>
+    <string name="em_q8_var_4">Pirates of Silicon Valley</string>
 
-    <string name="em_q9_var_1">Norway</string>
-    <string name="em_q9_var_2">Bulgaria</string>
-    <string name="em_q9_var_3">Ukraine</string>
-    <string name="em_q9_var_4">Albania</string>
+    <string name="em_q9_var_1">The Many Adventures of Winnie the Pooh</string>
+    <string name="em_q9_var_2">Teddy Bears</string>
+    <string name="em_q9_var_3">Paddington Bear</string>
+    <string name="em_q9_var_4">Ted</string>
 
-    <string name="em_q10_var_1">Germany</string>
-    <string name="em_q10_var_2">Israel</string>
-    <string name="em_q10_var_3">Montenegro</string>
-    <string name="em_q10_var_4">Portugal</string>
+    <string name="em_q10_var_1">American Beauty</string>
+    <string name="em_q10_var_2">The Name of the Rose</string>
+    <string name="em_q10_var_3">The War of the Roses</string>
+    <string name="em_q10_var_4">Once Upon a Time in America</string>
 
 </resources>
