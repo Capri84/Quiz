@@ -93,22 +93,23 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
 
     String name;
     String resultMessage;
+    String qnum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emoji);
 
-        rg1 = (RadioGroup) findViewById(R.id.radio_group1);
-        rg2 = (RadioGroup) findViewById(R.id.radio_group2);
-        rg3 = (RadioGroup) findViewById(R.id.radio_group3);
-        rg4 = (RadioGroup) findViewById(R.id.radio_group4);
-        rg5 = (RadioGroup) findViewById(R.id.radio_group5);
-        rg6 = (RadioGroup) findViewById(R.id.radio_group6);
-        rg7 = (RadioGroup) findViewById(R.id.radio_group7);
-        rg8 = (RadioGroup) findViewById(R.id.radio_group8);
-        rg9 = (RadioGroup) findViewById(R.id.radio_group9);
-        rg10 = (RadioGroup) findViewById(R.id.radio_group10);
+        rg1 = findViewById(R.id.radio_group1);
+        rg2 = findViewById(R.id.radio_group2);
+        rg3 = findViewById(R.id.radio_group3);
+        rg4 = findViewById(R.id.radio_group4);
+        rg5 = findViewById(R.id.radio_group5);
+        rg6 = findViewById(R.id.radio_group6);
+        rg7 = findViewById(R.id.radio_group7);
+        rg8 = findViewById(R.id.radio_group8);
+        rg9 = findViewById(R.id.radio_group9);
+        rg10 = findViewById(R.id.radio_group10);
         rg1.setOnCheckedChangeListener(this);
         rg2.setOnCheckedChangeListener(this);
         rg3.setOnCheckedChangeListener(this);
@@ -134,7 +135,8 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
 
     public void Question1() {
         question_number = findViewById(R.id.question1_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image1);
         question_image.setImageResource(R.drawable.forrest_gump);
         answer1_1 = findViewById(R.id.answer1_1);
@@ -151,8 +153,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     }
 
     public void Question2() {
+        currentQuestion++;
         question_number = findViewById(R.id.question2_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image2);
         question_image.setImageResource(R.drawable.mib);
         answer2_1 = findViewById(R.id.answer2_1);
@@ -169,8 +173,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     }
 
     public void Question3() {
+        currentQuestion++;
         question_number = findViewById(R.id.question3_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image3);
         question_image.setImageResource(R.drawable.breakfast_at_tiffany);
         answer3_1 = findViewById(R.id.answer3_1);
@@ -187,8 +193,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     }
 
     public void Question4() {
+        currentQuestion++;
         question_number = findViewById(R.id.question4_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image4);
         question_image.setImageResource(R.drawable.mask);
         answer4_1 = findViewById(R.id.answer4_1);
@@ -205,8 +213,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     }
 
     public void Question5() {
+        currentQuestion++;
         question_number = findViewById(R.id.question5_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image5);
         question_image.setImageResource(R.drawable.lamb_silence);
         answer5_1 = findViewById(R.id.answer5_1);
@@ -223,8 +233,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     }
 
     public void Question6() {
+        currentQuestion++;
         question_number = findViewById(R.id.question6_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image6);
         question_image.setImageResource(R.drawable.devil_prada);
         answer6_1 = findViewById(R.id.answer6_1);
@@ -241,8 +253,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     }
 
     public void Question7() {
+        currentQuestion++;
         question_number = findViewById(R.id.question7_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image7);
         question_image.setImageResource(R.drawable.signs);
         answer7_1 = findViewById(R.id.answer7_1);
@@ -259,8 +273,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     }
 
     public void Question8() {
+        currentQuestion++;
         question_number = findViewById(R.id.question8_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image8);
         question_image.setImageResource(R.drawable.matrix);
         answer8_1 = findViewById(R.id.answer8_1);
@@ -277,8 +293,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     }
 
     public void Question9() {
+        currentQuestion++;
         question_number = findViewById(R.id.question9_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image9);
         question_image.setImageResource(R.drawable.ted);
         answer9_1 = findViewById(R.id.answer9_1);
@@ -295,8 +313,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     }
 
     public void Question10() {
+        currentQuestion++;
         question_number = findViewById(R.id.question10_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image10);
         question_image.setImageResource(R.drawable.american_beauty);
         answer10_1 = findViewById(R.id.answer10_1);

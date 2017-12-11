@@ -55,6 +55,7 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
     Button nextQuestion;
     //????????????????????
     Boolean changeGroup = false;
+    String qnum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +72,8 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
 
     public void Question1() {
         question_number = findViewById(R.id.question_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
         question_image.setImageResource(R.drawable.question1img);
         ny_question = findViewById(R.id.question);
@@ -91,7 +93,8 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
 
     public void Question2() {
         question_number = findViewById(R.id.question_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
         question_image.setImageResource(R.drawable.grapes1);
         ny_question = findViewById(R.id.question);
@@ -111,7 +114,8 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
 
     public void Question3() {
         question_number = findViewById(R.id.question_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
         question_image.setImageResource(R.drawable.question3img);
         ny_question = findViewById(R.id.question);
@@ -131,7 +135,8 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
 
     public void Question4() {
         question_number = findViewById(R.id.question_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
         question_image.setImageResource(R.drawable.question4img1);
         ny_question = findViewById(R.id.question);
@@ -151,7 +156,8 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
 
     public void Question5() {
         question_number = findViewById(R.id.question_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
         question_image.setImageResource(R.drawable.question5img);
         ny_question = findViewById(R.id.question);
@@ -171,7 +177,8 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
 
     public void Question6() {
         question_number = findViewById(R.id.question_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
         question_image.setImageResource(R.drawable.question6img1);
         ny_question = findViewById(R.id.question);
@@ -191,7 +198,8 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
 
     public void Question7() {
         question_number = findViewById(R.id.question_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
         question_image.setImageResource(R.drawable.question7img);
         ny_question = findViewById(R.id.question);
@@ -211,7 +219,8 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
 
     public void Question8() {
         question_number = findViewById(R.id.question_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
         question_image.setImageResource(R.drawable.question8img1);
         ny_question = findViewById(R.id.question);
@@ -231,7 +240,8 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
 
     public void Question9() {
         question_number = findViewById(R.id.question_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
         question_image.setImageResource(R.drawable.question9img);
         ny_question = findViewById(R.id.question);
@@ -251,7 +261,8 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
 
     public void Question10() {
         question_number = findViewById(R.id.question_number);
-        question_number.setText(R.string.questionNumber1 + String.valueOf(currentQuestion) + R.string.questionNumber2 + String.valueOf(totalNumberOfQuestions));
+        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+        question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
         question_image.setImageResource(R.drawable.question10img);
         ny_question = findViewById(R.id.question);

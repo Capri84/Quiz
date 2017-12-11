@@ -17,14 +17,14 @@
 
     <!-- Emoji variants margins-->
     <style name="emoji_var_margins">
-        <item name="android:layout_marginLeft">@dimen/layout_margin1</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin4</item>
         <item name="android:gravity">center_vertical</item>
     </style>
 
     <!-- Emoji answer margins-->
     <style name="emoji_answer_margins">
-        <item name="android:layout_marginRight">@dimen/layout_margin1</item>
-        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin3</item>
+        <item name="android:gravity">center_vertical|right</item>
     </style>
 
     <!-- TextView margins-->

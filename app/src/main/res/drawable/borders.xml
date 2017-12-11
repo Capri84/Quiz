@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid
-        android:color="@color/button_background">
+    <solid android:color="#60e6ee9c">
     </solid>
     <stroke
         android:width="@dimen/border"
-        android:color="@color/colorAccent">
+        android:color="#c0ca33">
     </stroke>
     <corners
-        android:radius="@dimen/padding1"
-        android:color="@color/colorAccent">
+        android:color="#c0ca33"
+        android:radius="@dimen/padding1">
     </corners>
 </shape>
