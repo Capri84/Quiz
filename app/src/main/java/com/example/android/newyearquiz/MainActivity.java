@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    public final static String EXTRA_MESSAGE = "com.example.android.newyearquiz.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void openEmojiQuiz(View view) {
         Intent openEmojiQuiz = new Intent(this, EmojiActivity.class);
+        EditText nameField = (EditText) findViewById(R.id.name);
+        String message = nameField.getText().toString();
+        openEmojiQuiz.putExtra(EXTRA_MESSAGE, message);
         startActivity(openEmojiQuiz);
     }
 }

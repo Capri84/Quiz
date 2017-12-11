@@ -18,15 +18,15 @@ import android.widget.Toast;
 public class NewYearQuizActivity extends AppCompatActivity implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
 
     //1. Установить Вопрос № из 10 (нужен счетчик номера вопроса)
-   // 2. Установить текст вопроса
-   // 3. Установить варианты ответа
-   // 4. Установить ответ невидимым
-   // 5. Когда выбран ответ, проверить правильный ли он?
-   // 6. Если правильный, изменить цвет на зеленый, показать ответ, прибавить 1 к правильным ответам.
-   // 7. Если неправильный, изменить цвет на красный, показать ответ, прибавить 1 к неправильным ответам.
-   // 8. На Next Question - проверить, выбран ли ответ, очистить вьюхи с вопросом, ответом, вариантами ответа.
-   // 9. Если ответ на выбран, toast "Необходимо выбрать ответ".
-   // 10. Можно выбрать только один вариант (для радио баттон).
+    // 2. Установить текст вопроса
+    // 3. Установить варианты ответа
+    // 4. Установить ответ невидимым
+    // 5. Когда выбран ответ, проверить правильный ли он?
+    // 6. Если правильный, изменить цвет на зеленый, показать ответ, прибавить 1 к правильным ответам.
+    // 7. Если неправильный, изменить цвет на красный, показать ответ, прибавить 1 к неправильным ответам.
+    // 8. На Next Question - проверить, выбран ли ответ, очистить вьюхи с вопросом, ответом, вариантами ответа.
+    // 9. Если ответ на выбран, toast "Необходимо выбрать ответ".
+    // 10. Можно выбрать только один вариант (для радио баттон).
 
     // Номер текущего вопроса
     int currentQuestion = 1;
@@ -269,9 +269,9 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
         ny_answer.setVisibility(View.INVISIBLE);
     }
 
-    public void onCheckedChanged(RadioGroup group, int checkedId){
-        if (group != null && checkedId > -1 && changeGroup == false){
-            if(group == radioGroup1){
+    public void onCheckedChanged(RadioGroup group, int checkedId) {
+        if (group != null && checkedId > -1 && changeGroup == false) {
+            if (group == radioGroup1) {
                 changeGroup = true;
                 radioGroup2.clearCheck();
                 changeGroup = false;
@@ -295,7 +295,7 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
                         Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
                         break;
                 }
-            }else if(group == radioGroup2){
+            } else if (group == radioGroup2) {
                 changeGroup = true;
                 radioGroup1.clearCheck();
                 changeGroup = false;
@@ -326,7 +326,7 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.next_question:
-                if (radioGroup1 == null && radioGroup2 == null) {
+                if (!answer1.isChecked() && !answer2.isChecked() && !answer3.isChecked() && !answer4.isChecked()) {
                     Toast.makeText(this, R.string.not_chosen, Toast.LENGTH_SHORT).show();
                     return;
                 }
@@ -347,23 +347,32 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
                 switch (currentQuestion) {
                     case 2:
                         Question2();
+                        break;
                     case 3:
                         Question3();
+                        break;
                     case 4:
                         Question4();
+                        break;
                     case 5:
                         Question5();
+                        break;
                     case 6:
                         Question6();
+                        break;
                     case 7:
                         Question7();
+                        break;
                     case 8:
                         Question8();
+                        break;
                     case 9:
                         Question9();
+                        break;
                     case 10:
                         Question10();
+                        break;
+                }
         }
     }
-}
 }

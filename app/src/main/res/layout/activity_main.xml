@@ -9,30 +9,31 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/gradient">
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:scaleType="centerCrop"
             android:layout_weight="2"
+            android:scaleType="centerCrop"
             android:src="@drawable/quiz" />
 
         <EditText
+            android:id="@+id/name"
             style="@style/name_field_margins"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.7"
+            android:gravity="center_vertical"
             android:hint="@string/players_name_hint"
-            android:inputType="textCapWords"
-            android:gravity="center_vertical"/>
+            android:inputType="textCapWords" />
 
         <TextView
+            style="@style/TextView_margins"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/category"
-            style="@style/TextView_margins"/>
+            android:text="@string/category" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,26 +46,26 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="bottom|center_horizontal"
-                android:src="@drawable/nyworld"
-                android:onClick="openNYQuiz"/>
+                android:layout_weight="1"
+                android:onClick="openNYQuiz"
+                android:src="@drawable/nyworld" />
 
             <ImageButton
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="bottom|center_horizontal"
-                android:src="@drawable/emoji1"
-                android:onClick="openEmojiQuiz"/>
+                android:layout_weight="1"
+                android:onClick="openEmojiQuiz"
+                android:src="@drawable/emoji1" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
             android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageButton

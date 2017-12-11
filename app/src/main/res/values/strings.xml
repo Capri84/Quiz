@@ -1,6 +1,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Quiz</string>
     <string name="players_name_hint">Enter your name</string>
+    <string name="nameSummary">Congratulations, <xliff:g example="Amy" id="name">%s</xliff:g>!</string>
+    <string name="well_done">Well done!</string>
+    <string name="results">Here are your results: </string>
+    <string name="total_correct"><xliff:g example="5" id="totalCorrect">%d</xliff:g> correct answers out of <xliff:g example="10" id="number_of_questions">%d</xliff:g>!</string>
+    <string name="total_incorrect"><xliff:g example="5" id="totalIncorrect">%d</xliff:g> wrong answers out of <xliff:g example="10" id="number_of_questions">%d</xliff:g>!</string>
     <string name="category">Choose a category:</string>
     <string name="questionNumber1">Question</string>
     <string name="questionNumber2">out of</string>
@@ -9,6 +14,10 @@
     <string name="nextQuestion">Next Question</string>
     <string name="not_chosen">"Please, choose the answer to proceed"</string>
     <string name="emoji_quiz">"Emoji Quiz"</string>
+    <string name="submit_button">Submit</string>
+    <string name="tryAnother">Try another quiz category at the Main screen of the app!</string>
+    <string name="main_screen">Main screen</string>
+    <string name="share">Share</string>
 
     <!--New Year Quiz Questions-->
     <string name="ny_question_1">In this country tradition requires you to write your New Year’s wish on a piece of paper and then set it alight, drop the remains into your champagne glass and drink it before the clock goes past 12.</string>
