@@ -2,10 +2,11 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#c0ca33</color>
+    <color name="colorAccent">#C6B397</color>
     <color name="button_background">#60ffffff</color>
-    <color name="questions_color">#000000</color>
-    <color name="wrong_answer_color">#ff0000</color>
-    <color name="correct_answer_color">#00ff00</color>
-    <color name="em_background">#fff59d</color>
+    <color name="questions_color">#998F7A</color>
+    <color name="wrong_answer_color">#E65F64</color>
+    <color name="correct_answer_color">#7CB07A</color>
+    <color name="em_background">#F6E9C4</color>
+    <color name="em_header_color">#DB6374</color>
 </resources>

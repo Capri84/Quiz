@@ -15,17 +15,19 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#f0f4c3"
+            android:layout_marginBottom="@dimen/padding2"
             android:fontFamily="cursive"
             android:text="@string/emoji_quiz"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/em_header_color"
             android:textSize="@dimen/emoji_quiz_text_size" />
 
         <TextView
             android:id="@+id/question1_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/border"
             android:fontFamily="cursive"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
@@ -37,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/borders"
+            android:padding="@dimen/border"
             android:scaleType="centerCrop" />
 
         <LinearLayout
@@ -97,6 +100,7 @@
             android:id="@+id/question2_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/border"
             android:fontFamily="cursive"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
@@ -108,6 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/borders"
+            android:padding="@dimen/border"
             android:scaleType="centerCrop" />
 
         <LinearLayout
@@ -168,6 +173,7 @@
             android:id="@+id/question3_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/border"
             android:fontFamily="cursive"
             android:text="Question 3 of 10"
             android:textAlignment="center"
@@ -180,6 +186,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/borders"
+            android:padding="@dimen/border"
             android:scaleType="centerCrop" />
 
         <LinearLayout
@@ -240,6 +247,7 @@
             android:id="@+id/question4_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/border"
             android:fontFamily="cursive"
             android:text="Question 4 of 10"
             android:textAlignment="center"
@@ -252,6 +260,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/borders"
+            android:padding="@dimen/border"
             android:scaleType="centerCrop" />
 
         <LinearLayout
@@ -312,6 +321,7 @@
             android:id="@+id/question5_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/border"
             android:fontFamily="cursive"
             android:text="Question 5 of 10"
             android:textAlignment="center"
@@ -324,6 +334,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/borders"
+            android:padding="@dimen/border"
             android:scaleType="centerCrop" />
 
         <LinearLayout
@@ -384,6 +395,7 @@
             android:id="@+id/question6_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/border"
             android:fontFamily="cursive"
             android:text="Question 6 of 10"
             android:textAlignment="center"
@@ -396,6 +408,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/borders"
+            android:padding="@dimen/border"
             android:scaleType="centerCrop" />
 
         <LinearLayout
@@ -456,6 +469,7 @@
             android:id="@+id/question7_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/border"
             android:fontFamily="cursive"
             android:text="Question 7 of 10"
             android:textAlignment="center"
@@ -468,6 +482,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/borders"
+            android:padding="@dimen/border"
             android:scaleType="centerCrop" />
 
         <LinearLayout
@@ -528,6 +543,7 @@
             android:id="@+id/question8_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/border"
             android:fontFamily="cursive"
             android:text="Question 8 of 10"
             android:textAlignment="center"
@@ -540,6 +556,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/borders"
+            android:padding="@dimen/border"
             android:scaleType="centerCrop" />
 
         <LinearLayout
@@ -600,6 +617,7 @@
             android:id="@+id/question9_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/border"
             android:fontFamily="cursive"
             android:text="Question 9 of 10"
             android:textAlignment="center"
@@ -612,6 +630,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/borders"
+            android:padding="@dimen/border"
             android:scaleType="centerCrop" />
 
         <LinearLayout
@@ -672,6 +691,7 @@
             android:id="@+id/question10_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/border"
             android:fontFamily="cursive"
             android:text="Question 10 of 10"
             android:textAlignment="center"
@@ -684,6 +704,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/borders"
+            android:padding="@dimen/border"
             android:scaleType="centerCrop" />
 
         <LinearLayout
@@ -742,18 +763,21 @@
             android:orientation="horizontal">
 
             <Button
+                style="@style/emoji_buttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="mainActivity"
                 android:text="@string/main_screen" />
 
             <Button
+                style="@style/emoji_buttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="submit"
                 android:text="@string/submit_button" />
 
             <Button
+                style="@style/emoji_buttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="share"

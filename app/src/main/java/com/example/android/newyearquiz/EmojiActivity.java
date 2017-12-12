@@ -856,10 +856,24 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     }
 
     public void submit(View view) {
-        Intent openEmojiQuiz = getIntent();
-        name = openEmojiQuiz.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        String resultMessage = createQuizSummary(name, correct_score, incorrect_score, totalNumberOfQuestions);
-        Toast.makeText(getApplicationContext(), resultMessage, Toast.LENGTH_LONG).show();
+        if (!answer1_1.isChecked() && !answer1_2.isChecked() && !answer1_3.isChecked() && !answer1_4.isChecked() &&
+                !answer2_1.isChecked() && !answer2_2.isChecked() && !answer2_3.isChecked() && !answer2_4.isChecked() &&
+                !answer3_1.isChecked() && !answer3_2.isChecked() && !answer3_3.isChecked() && !answer3_4.isChecked() &&
+                !answer4_1.isChecked() && !answer4_2.isChecked() && !answer4_3.isChecked() && !answer4_4.isChecked() &&
+                !answer5_1.isChecked() && !answer5_2.isChecked() && !answer5_3.isChecked() && !answer5_4.isChecked() &&
+                !answer6_1.isChecked() && !answer6_2.isChecked() && !answer6_3.isChecked() && !answer6_4.isChecked() &&
+                !answer7_1.isChecked() && !answer7_2.isChecked() && !answer7_3.isChecked() && !answer7_4.isChecked() &&
+                !answer8_1.isChecked() && !answer8_2.isChecked() && !answer8_3.isChecked() && !answer8_4.isChecked() &&
+                !answer9_1.isChecked() && !answer9_2.isChecked() && !answer9_3.isChecked() && !answer9_4.isChecked() &&
+                !answer10_1.isChecked() && !answer10_2.isChecked() && !answer10_3.isChecked() && !answer10_4.isChecked()) {
+            Toast.makeText(this, R.string.not_chosen1, Toast.LENGTH_SHORT).show();
+            return;
+        } else {
+            Intent openEmojiQuiz = getIntent();
+            name = openEmojiQuiz.getStringExtra(MainActivity.EXTRA_MESSAGE);
+            String resultMessage = createQuizSummary(name, correct_score, incorrect_score, totalNumberOfQuestions);
+            Toast.makeText(getApplicationContext(), resultMessage, Toast.LENGTH_LONG).show();
+        }
     }
 
     /**
