@@ -56,11 +56,9 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
         public void onTextChanged(CharSequence s, int start, int before,
                                   int count) {
         }
-
         public void beforeTextChanged(CharSequence s, int start, int count,
                                       int after) {
         }
-
         public void afterTextChanged(Editable s) {
             if (ny_answer1.getText().toString().trim().equals("Russia")) {
                 correct_score++;
