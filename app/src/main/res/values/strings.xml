@@ -14,7 +14,9 @@
     <string name="nextQuestion">Next Question</string>
     <string name="not_chosen">"Please, choose the answer to proceed"</string>
     <string name="not_chosen1">"Please, answer at least one question to proceed"</string>
+    <string name="not_chosen2">"Please, enter the answer to proceed"</string>
     <string name="emoji_quiz" translatable="false">"Emoji Movie Quiz"</string>
+    <string name="ny_quiz">"New Year traditions around the world"</string>
     <string name="submit_button">Submit</string>
     <string name="tryAnother">Try another quiz category at the Main screen of the app!</string>
     <string name="main_screen">Main screen</string>
@@ -33,10 +35,7 @@
     <string name="ny_question_10">In this country people drop molten lead into the cold water to see what shape it takes, and predict the future."</string>
 
     <!--New Year Quiz Answer Variants-->
-    <string name="ny_q1_var_1">Turkey</string>
-    <string name="ny_q1_var_2">Russia</string>
-    <string name="ny_q1_var_3">Switzerland</string>
-    <string name="ny_q1_var_4">Chile</string>
+    <string name="ny_answer1_hint">Turkey/Russia/Switzerland/Chile</string>
 
     <string name="ny_q2_var_1">Cherries</string>
     <string name="ny_q2_var_2">Olives</string>

@@ -14,19 +14,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
-    // Номер текущего вопроса
+    // Number of the current question
     int currentQuestion = 1;
-    // Общее количество вопросов
+    // Total number of questions
     int totalNumberOfQuestions = 10;
-    // Счетчик правильных ответов игрока
+    // Correct answers counter
     int correct_score = 0;
-    // Счетчик неправильных ответов игрока
+    // Incorrect answers counter
     int incorrect_score = 0;
-    //Тут мы создаем переменную для хранения номера вопроса
+    // Here we declare a variable to store the question number
     TextView question_number;
-    //Тут мы создаем переменную для хранения задания
+    // Here we declare a variable to store the question image
     ImageView question_image;
-    //Тут мы создаем переменные для хранения вариантов ответов
+    // Here we declare variables for answer variants
     RadioButton answer1_1;
     RadioButton answer1_2;
     RadioButton answer1_3;
@@ -67,7 +67,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     RadioButton answer10_2;
     RadioButton answer10_3;
     RadioButton answer10_4;
-    //Тут мы создаем переменную для хранения ответов
+    // Here we declare variables for answers
     ImageView answer_image1;
     ImageView answer_image2;
     ImageView answer_image3;
@@ -78,8 +78,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     ImageView answer_image8;
     ImageView answer_image9;
     ImageView answer_image10;
-
-    //RadioGroups
+    // Here we declare RadioGroups
     RadioGroup rg1;
     RadioGroup rg2;
     RadioGroup rg3;
@@ -90,16 +89,18 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     RadioGroup rg8;
     RadioGroup rg9;
     RadioGroup rg10;
-
+    // Here we declare a variable to store player's name
     String name;
+    // Here we declare a variable for the quiz results toast
     String resultMessage;
+    // Here we declare a variable to store a string "Question (current question number) out of (total number of questions)"
     String qnum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emoji);
-
+// Here we initialize RadioGroups
         rg1 = findViewById(R.id.radio_group1);
         rg2 = findViewById(R.id.radio_group2);
         rg3 = findViewById(R.id.radio_group3);
@@ -110,6 +111,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         rg8 = findViewById(R.id.radio_group8);
         rg9 = findViewById(R.id.radio_group9);
         rg10 = findViewById(R.id.radio_group10);
+        // Here we set the listener to the Radioroups
         rg1.setOnCheckedChangeListener(this);
         rg2.setOnCheckedChangeListener(this);
         rg3.setOnCheckedChangeListener(this);
@@ -120,7 +122,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         rg8.setOnCheckedChangeListener(this);
         rg9.setOnCheckedChangeListener(this);
         rg10.setOnCheckedChangeListener(this);
-
+//Here we call methods to fill layout with questions and answers
         Question1();
         Question2();
         Question3();
@@ -133,6 +135,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         Question10();
     }
 
+    // Method which fills layout with question 1 and it's answer and answer variants
     public void Question1() {
         question_number = findViewById(R.id.question1_number);
         qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
@@ -152,6 +155,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         answer_image1.setVisibility(View.INVISIBLE);
     }
 
+    // Method which fills layout with question 2 and it's answer and answer variants
     public void Question2() {
         currentQuestion++;
         question_number = findViewById(R.id.question2_number);
@@ -172,6 +176,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         answer_image2.setVisibility(View.INVISIBLE);
     }
 
+    // Method which fills layout with question 3 and it's answer and answer variants
     public void Question3() {
         currentQuestion++;
         question_number = findViewById(R.id.question3_number);
@@ -192,6 +197,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         answer_image3.setVisibility(View.INVISIBLE);
     }
 
+    // Method which fills layout with question 4 and it's answer and answer variants
     public void Question4() {
         currentQuestion++;
         question_number = findViewById(R.id.question4_number);
@@ -212,6 +218,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         answer_image4.setVisibility(View.INVISIBLE);
     }
 
+    // Method which fills layout with question 5 and it's answer and answer variants
     public void Question5() {
         currentQuestion++;
         question_number = findViewById(R.id.question5_number);
@@ -232,6 +239,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         answer_image5.setVisibility(View.INVISIBLE);
     }
 
+    // Method which fills layout with question 6 and it's answer and answer variants
     public void Question6() {
         currentQuestion++;
         question_number = findViewById(R.id.question6_number);
@@ -252,6 +260,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         answer_image6.setVisibility(View.INVISIBLE);
     }
 
+    // Method which fills layout with question 7 and it's answer and answer variants
     public void Question7() {
         currentQuestion++;
         question_number = findViewById(R.id.question7_number);
@@ -272,6 +281,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         answer_image7.setVisibility(View.INVISIBLE);
     }
 
+    // Method which fills layout with question 8 and it's answer and answer variants
     public void Question8() {
         currentQuestion++;
         question_number = findViewById(R.id.question8_number);
@@ -292,6 +302,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         answer_image8.setVisibility(View.INVISIBLE);
     }
 
+    // Method which fills layout with question 9 and it's answer and answer variants
     public void Question9() {
         currentQuestion++;
         question_number = findViewById(R.id.question9_number);
@@ -312,6 +323,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         answer_image9.setVisibility(View.INVISIBLE);
     }
 
+    // Method which fills layout with question 10 and it's answer and answer variants
     public void Question10() {
         currentQuestion++;
         question_number = findViewById(R.id.question10_number);
@@ -332,6 +344,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         answer_image10.setVisibility(View.INVISIBLE);
     }
 
+    // This method checks the answers, shows whether the wrong or the right one was chosen by the player, shows correct answer, counts correct and incorrect scores.
     public void onCheckedChanged(RadioGroup radioGroup, int CheckedRadioButtonId) {
         if (radioGroup == rg1) {
             switch (CheckedRadioButtonId) {
@@ -855,6 +868,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         }
     }
 
+    // This method is called by clicking on Submit button. It checks if at least one answer has been selected in the quiz, and if not, asks to choose, and if so, creates and displays a toast with the results of the game.
     public void submit(View view) {
         if (!answer1_1.isChecked() && !answer1_2.isChecked() && !answer1_3.isChecked() && !answer1_4.isChecked() &&
                 !answer2_1.isChecked() && !answer2_2.isChecked() && !answer2_3.isChecked() && !answer2_4.isChecked() &&
@@ -876,9 +890,7 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         }
     }
 
-    /**
-     * Creates Quiz summary.
-     */
+    // This method creates Quiz summary.
     private String createQuizSummary(String name, int correct_score, int incorrect_score, int totalNumberOfQuestions) {
         resultMessage = getString(R.string.nameSummary, name);
         resultMessage += "\n" + getString(R.string.well_done);
@@ -889,11 +901,13 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         return resultMessage;
     }
 
+    // This method is called by clicking on Main screen button. It returns the user to the Main screen.
     public void mainActivity(View view) {
         Intent MainActivity = new Intent(this, MainActivity.class);
         startActivity(MainActivity);
     }
 
+    // This method is called by clicking on Share button. It allows to share your game results via e-mail, social apps, etc.
     public void share(View view) {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");

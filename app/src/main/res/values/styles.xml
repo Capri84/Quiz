@@ -19,7 +19,8 @@
     <style name="TextView_margins">
         <item name="android:layout_marginLeft">@dimen/layout_margin1</item>
         <item name="android:layout_marginRight">@dimen/layout_margin1</item>
-        <item name="android:layout_marginTop">@dimen/padding1</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin4</item>
+        <item name="android:layout_marginBottom">@dimen/layout_margin4</item>
         <item name="android:textSize">@dimen/text_size</item>
     </style>
 
@@ -29,14 +30,15 @@
         <item name="android:textSize">@dimen/text_size2</item>
         <item name="android:textColor">@color/questions_color</item>
         <item name="android:gravity">center</item>
-        <item name="android:background">@color/button_background</item>
+        <item name="android:background">@color/ny_image_background</item>
+        <item name="android:fontFamily">sans-serif-condensed-light</item>
     </style>
 
     <!-- RadioButtons style-->
     <style name="RadioButtons">
-        <item name="android:layout_marginLeft">@dimen/layout_margin3</item>
-        <item name="android:layout_marginRight">@dimen/layout_margin3</item>
-        <item name="android:background">@color/button_background</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin1</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin1</item>
+        <item name="android:background">@color/ny_image_background</item>
     </style>
 
     <!-- Emoji variants margins-->
@@ -69,6 +71,14 @@
         <item name="android:layout_marginBottom">@dimen/border</item>
         <item name="android:paddingLeft">@dimen/border</item>
         <item name="android:paddingRight">@dimen/border</item>
+    </style>
+
+    <!-- NY buttons style-->
+    <style name="ny_buttons">
+        <item name="android:background">@drawable/ny_borders</item>
+        <item name="android:layout_marginBottom">@dimen/layout_margin3</item>
+        <item name="android:padding">@dimen/padding2</item>
+        <item name="android:layout_gravity">center_horizontal|bottom</item>
     </style>
 
 </resources>

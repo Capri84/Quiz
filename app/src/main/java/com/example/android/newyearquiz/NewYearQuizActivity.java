@@ -5,28 +5,23 @@ import android.provider.MediaStore;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class NewYearQuizActivity extends AppCompatActivity implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
+import java.util.Timer;
 
-    //1. Установить Вопрос № из 10 (нужен счетчик номера вопроса)
-    // 2. Установить текст вопроса
-    // 3. Установить варианты ответа
-    // 4. Установить ответ невидимым
-    // 5. Когда выбран ответ, проверить правильный ли он?
-    // 6. Если правильный, изменить цвет на зеленый, показать ответ, прибавить 1 к правильным ответам.
-    // 7. Если неправильный, изменить цвет на красный, показать ответ, прибавить 1 к неправильным ответам.
-    // 8. На Next Question - проверить, выбран ли ответ, очистить вьюхи с вопросом, ответом, вариантами ответа.
-    // 9. Если ответ на выбран, toast "Необходимо выбрать ответ".
-    // 10. Можно выбрать только один вариант (для радио баттон).
+public class NewYearQuizActivity extends AppCompatActivity implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
 
     // Номер текущего вопроса
     int currentQuestion = 1;
@@ -53,9 +48,34 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
     RadioGroup radioGroup2;
     //Тут мы создаем переменную для хранения Button
     Button nextQuestion;
-    //????????????????????
+    //Другое
     Boolean changeGroup = false;
     String qnum;
+    EditText ny_answer1;
+    public TextWatcher mTextEditorWatcher = new TextWatcher() {
+        public void onTextChanged(CharSequence s, int start, int before,
+                                  int count) {
+        }
+
+        public void beforeTextChanged(CharSequence s, int start, int count,
+                                      int after) {
+        }
+
+        public void afterTextChanged(Editable s) {
+            if (ny_answer1.getText().toString().trim().equals("Russia")) {
+                correct_score++;
+                ny_answer.setVisibility(View.VISIBLE);
+                Toast.makeText(getApplicationContext(), R.string.correctAnswer, Toast.LENGTH_SHORT).show();
+                return;
+            } else if (ny_answer1.getText().toString().trim() != "Russia") {
+                incorrect_score++;
+                ny_answer.setVisibility(View.VISIBLE);
+                Toast.makeText(getApplicationContext(), R.string.wrongAnswer, Toast.LENGTH_SHORT).show();
+                return;
+            }
+        }
+    };
+    private Timer timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +88,8 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
         Question1();
         nextQuestion = (Button) findViewById(R.id.next_question);
         nextQuestion.setOnClickListener(this);
+        ny_answer1 = (EditText) findViewById(R.id.ny_answer1);
+        ny_answer1.addTextChangedListener(mTextEditorWatcher);
     }
 
     public void Question1() {
@@ -75,17 +97,9 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
         qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
         question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
-        question_image.setImageResource(R.drawable.question1img);
+        question_image.setImageResource(R.drawable.question11img);
         ny_question = findViewById(R.id.question);
         ny_question.setText(R.string.ny_question_1);
-        answer1 = findViewById(R.id.answer1);
-        answer1.setText(R.string.ny_q1_var_1);
-        answer2 = findViewById(R.id.answer2);
-        answer2.setText(R.string.ny_q1_var_2);
-        answer3 = findViewById(R.id.answer3);
-        answer3.setText(R.string.ny_q1_var_3);
-        answer4 = findViewById(R.id.answer4);
-        answer4.setText(R.string.ny_q1_var_4);
         ny_answer = findViewById(R.id.answer);
         ny_answer.setText(R.string.ny_answer_1);
         ny_answer.setVisibility(View.INVISIBLE);
@@ -96,9 +110,12 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
         qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
         question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
-        question_image.setImageResource(R.drawable.grapes1);
+        question_image.setImageResource(R.drawable.question2img);
         ny_question = findViewById(R.id.question);
         ny_question.setText(R.string.ny_question_2);
+        ny_answer1.setVisibility(View.INVISIBLE);
+        radioGroup1.setVisibility(View.VISIBLE);
+        radioGroup2.setVisibility(View.VISIBLE);
         answer1 = findViewById(R.id.answer1);
         answer1.setText(R.string.ny_q2_var_1);
         answer2 = findViewById(R.id.answer2);
@@ -117,7 +134,7 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
         qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
         question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
-        question_image.setImageResource(R.drawable.question3img);
+        question_image.setImageResource(R.drawable.question31img);
         ny_question = findViewById(R.id.question);
         ny_question.setText(R.string.ny_question_3);
         answer1 = findViewById(R.id.answer1);
@@ -138,7 +155,7 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
         qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
         question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
-        question_image.setImageResource(R.drawable.question4img1);
+        question_image.setImageResource(R.drawable.question4img);
         ny_question = findViewById(R.id.question);
         ny_question.setText(R.string.ny_question_4);
         answer1 = findViewById(R.id.answer1);
@@ -180,7 +197,7 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
         qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
         question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
-        question_image.setImageResource(R.drawable.question6img1);
+        question_image.setImageResource(R.drawable.question6img);
         ny_question = findViewById(R.id.question);
         ny_question.setText(R.string.ny_question_6);
         answer1 = findViewById(R.id.answer1);
@@ -222,7 +239,7 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
         qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
         question_number.setText(qnum);
         question_image = findViewById(R.id.question_image);
-        question_image.setImageResource(R.drawable.question8img1);
+        question_image.setImageResource(R.drawable.question8img);
         ny_question = findViewById(R.id.question);
         ny_question.setText(R.string.ny_question_8);
         answer1 = findViewById(R.id.answer1);
@@ -337,24 +354,41 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.next_question:
-                if (!answer1.isChecked() && !answer2.isChecked() && !answer3.isChecked() && !answer4.isChecked()) {
-                    Toast.makeText(this, R.string.not_chosen, Toast.LENGTH_SHORT).show();
-                    return;
+                if (currentQuestion == 1) {
+                    if (ny_answer1.getText().toString().trim().equals("")) {
+                        Toast.makeText(getApplicationContext(), R.string.not_chosen2, Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    /**} else if (ny_answer1.getText().toString().equals("Russia")) {
+                     Toast.makeText(this, R.string.correctAnswer, Toast.LENGTH_SHORT).show();
+                     correct_score++;
+                     ny_answer.setVisibility(View.VISIBLE);
+                     } else {
+                     Toast.makeText(this, R.string.wrongAnswer, Toast.LENGTH_SHORT).show();
+                     incorrect_score++;
+                     }*/
+                } else {
+                    if (!answer1.isChecked() && !answer2.isChecked() && !answer3.isChecked() && !answer4.isChecked()) {
+                        Toast.makeText(this, R.string.not_chosen, Toast.LENGTH_SHORT).show();
+                        return;
+                    }
                 }
-                currentQuestion++;
                 ny_question.setText("");
-                answer1.setText("");
-                answer2.setText("");
-                answer3.setText("");
-                answer4.setText("");
-                radioGroup1.clearCheck();
-                radioGroup2.clearCheck();
                 ny_answer.setText("");
                 ny_answer.setVisibility(View.INVISIBLE);
-                answer1.setTextColor(getResources().getColor(R.color.questions_color));
-                answer2.setTextColor(getResources().getColor(R.color.questions_color));
-                answer3.setTextColor(getResources().getColor(R.color.questions_color));
-                answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                if (currentQuestion != 1) {
+                    answer1.setText("");
+                    answer2.setText("");
+                    answer3.setText("");
+                    answer4.setText("");
+                    radioGroup1.clearCheck();
+                    radioGroup2.clearCheck();
+                    answer1.setTextColor(getResources().getColor(R.color.questions_color));
+                    answer2.setTextColor(getResources().getColor(R.color.questions_color));
+                    answer3.setTextColor(getResources().getColor(R.color.questions_color));
+                    answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                }
+                currentQuestion++;
                 switch (currentQuestion) {
                     case 2:
                         Question2();

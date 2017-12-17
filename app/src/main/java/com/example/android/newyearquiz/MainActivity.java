@@ -15,11 +15,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    // This method calls NY Quiz Activity
     public void openNYQuiz(View view) {
         Intent openNYQuiz = new Intent(this, NewYearQuizActivity.class);
         startActivity(openNYQuiz);
     }
 
+    // This method calls Emoji Quiz Activity
     public void openEmojiQuiz(View view) {
         Intent openEmojiQuiz = new Intent(this, EmojiActivity.class);
         EditText nameField = (EditText) findViewById(R.id.name);
