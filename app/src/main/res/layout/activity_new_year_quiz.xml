@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="cursive"
             android:gravity="center_horizontal"
-            android:text=""
+            android:text="@string/questionNumber"
             android:textSize="@dimen/text_size2" />
 
         <ImageView
@@ -48,31 +48,11 @@
             style="@style/TextView_questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="" />
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/ny_answer1"
-                style="@style/name_field_margins"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="bottom"
-                android:hint="@string/ny_answer1_hint"
-                android:inputType="textCapWords"
-                android:visibility="visible" />
-
-            <LinearLayout
-                style="@style/RadioButtons"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility="invisible">
+            android:text="@string/ny_question_2" />
 
                 <RadioGroup
                     android:id="@+id/radio_group1"
+                    style="@style/RadioButtons"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -82,18 +62,19 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="" />
+                        android:text="@string/ny_q2_var_1" />
 
                     <RadioButton
                         android:id="@+id/answer2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="" />
+                        android:text="@string/ny_q2_var_2" />
                 </RadioGroup>
 
                 <RadioGroup
                     android:id="@+id/radio_group2"
+                    style="@style/RadioButtons"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -103,65 +84,22 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="" />
+                        android:text="@string/ny_q2_var_3" />
 
                     <RadioButton
                         android:id="@+id/answer4"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="" />
+                        android:text="@string/ny_q2_var_4" />
                 </RadioGroup>
-            </LinearLayout>
-
-            <LinearLayout
-                style="@style/RadioButtons"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility="invisible">
-
-                <CheckBox
-                    android:id="@+id/checkbox1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
-
-                <CheckBox
-                    android:id="@+id/checkbox2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
-
-                <CheckBox
-                    android:id="@+id/checkbox3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
-
-                <CheckBox
-                    android:id="@+id/checkbox4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
-            </LinearLayout>
-        </FrameLayout>
 
         <TextView
             android:id="@+id/answer"
             style="@style/TextView_questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="" />
-
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal">
+            android:text="@string/ny_answer_2" />
 
             <Button
                 android:id="@+id/next_question"
@@ -169,14 +107,5 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/nextQuestion" />
-
-            <Button
-                android:id="@+id/submit"
-                style="@style/ny_buttons"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/submit_button"
-                android:visibility="invisible" />
-        </FrameLayout>
     </LinearLayout>
 </ScrollView>

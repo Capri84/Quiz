@@ -83,7 +83,7 @@
     <string name="ny_q10_var_4">Portugal</string>
 
     <!--New Year Quiz: Correct answers and extra info-->
-    <string name="ny_answer_1">Russia. It is believed that if you manage to do all this while the Chimes are beating, the wish is sure to come true.</string>
+    <string name="ny_answer_1">\nRussia. It is believed that if you manage to do all this while the Chimes are beating, the wish is sure to come true.</string>
     <string name="ny_answer_2">12 grapes. They are supposed to bring good luck – one grape for each of the twelve months of the New Year.</string>
     <string name="ny_answer_3">USA. This tradition takes place in New York since 1907.</string>
     <string name="ny_answer_4">Greece. It is believed that the coin will bring good luck in the new year to the one who finds it.</string>
