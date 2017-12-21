@@ -41,59 +41,62 @@
             android:background="@drawable/ny_borders"
             android:padding="@dimen/padding1"
             android:scaleType="centerCrop"
-            android:src="@drawable/question2img" />
+            android:src="@drawable/question6img" />
 
         <TextView
             android:id="@+id/question"
             style="@style/TextView_questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/ny_question_2" />
+            android:text="@string/ny_question_6" />
 
-                <RadioGroup
-                    android:id="@+id/radio_group1"
-                    style="@style/RadioButtons"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+        <LinearLayout
+            style="@style/RadioButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/answer1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/ny_q2_var_1" />
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ny_q6_var_1" />
 
-                    <RadioButton
-                        android:id="@+id/answer2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/ny_q2_var_2" />
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ny_q6_var_2" />
 
-                    <RadioButton
-                        android:id="@+id/answer3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/ny_q2_var_3" />
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ny_q6_var_3" />
 
-                    <RadioButton
-                        android:id="@+id/answer4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/ny_q2_var_4" />
-                </RadioGroup>
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ny_q6_var_4" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/answer"
             style="@style/TextView_questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/ny_answer_2" />
+            android:text="@string/ny_answer_6" />
 
-            <Button
-                android:id="@+id/next_question"
-                style="@style/ny_buttons"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/nextQuestion" />
+        <Button
+            android:id="@+id/next_question"
+            style="@style/ny_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nextQuestion" />
     </LinearLayout>
 </ScrollView>
