@@ -108,26 +108,10 @@ public class CheckBoxesActivity extends AppCompatActivity implements View.OnClic
                     checkbox_counter++;
                 }
                 if (checkbox_counter == 2) {
-                    if (!answer1.isChecked()) {
-                        answer2.setEnabled(false);
-                        answer3.setEnabled(false);
-                        answer4.setEnabled(false);
-                    }
-                    if (!answer2.isChecked()) {
-                        answer1.setEnabled(false);
-                        answer3.setEnabled(false);
-                        answer4.setEnabled(false);
-                    }
-                    if (!answer3.isChecked()) {
-                        answer1.setEnabled(false);
-                        answer2.setEnabled(false);
-                        answer4.setEnabled(false);
-                    }
-                    if (!answer4.isChecked()) {
                         answer1.setEnabled(false);
                         answer2.setEnabled(false);
                         answer3.setEnabled(false);
-                    }
+                    answer4.setEnabled(false);
                     if (answer1.isChecked() && answer4.isChecked()) {
                         ny_answer.setVisibility(View.VISIBLE);
                         correct_score++;
@@ -154,26 +138,10 @@ public class CheckBoxesActivity extends AppCompatActivity implements View.OnClic
                     checkbox_counter++;
                 }
                 if (checkbox_counter == 2) {
-                    if (!answer1.isChecked()) {
-                        answer2.setEnabled(false);
-                        answer3.setEnabled(false);
-                        answer4.setEnabled(false);
-                    }
-                    if (!answer2.isChecked()) {
-                        answer1.setEnabled(false);
-                        answer3.setEnabled(false);
-                        answer4.setEnabled(false);
-                    }
-                    if (!answer3.isChecked()) {
-                        answer1.setEnabled(false);
-                        answer2.setEnabled(false);
-                        answer4.setEnabled(false);
-                    }
-                    if (!answer4.isChecked()) {
-                        answer1.setEnabled(false);
-                        answer2.setEnabled(false);
-                        answer3.setEnabled(false);
-                    }
+                    answer1.setEnabled(false);
+                    answer2.setEnabled(false);
+                    answer3.setEnabled(false);
+                    answer4.setEnabled(false);
                     if (answer2.isChecked() && answer3.isChecked()) {
                         ny_answer.setVisibility(View.VISIBLE);
                         correct_score++;
