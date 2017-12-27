@@ -76,9 +76,11 @@
     <!-- NY buttons style-->
     <style name="ny_buttons">
         <item name="android:background">@drawable/ny_borders</item>
-        <item name="android:layout_marginBottom">@dimen/layout_margin3</item>
-        <item name="android:padding">@dimen/padding2</item>
-        <item name="android:layout_gravity">center_horizontal|bottom</item>
+        <item name="android:layout_marginLeft">@dimen/padding2</item>
+        <item name="android:layout_marginRight">@dimen/padding2</item>
+        <item name="android:layout_marginBottom">@dimen/padding1</item>
+        <item name="android:paddingLeft">@dimen/padding2</item>
+        <item name="android:paddingRight">@dimen/padding2</item>
     </style>
 
 </resources>

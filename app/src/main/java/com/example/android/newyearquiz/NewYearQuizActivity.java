@@ -67,7 +67,7 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
         if (editText.getText().toString().trim().equals("")) {
             Toast.makeText(this, R.string.not_chosen2, Toast.LENGTH_SHORT).show();
             return;
-        } else if (editText.getText().toString().equals("Russia")) {
+        } else if (editText.getText().toString().trim().equals("Russia")) {
             Toast.makeText(this, R.string.correctAnswer, Toast.LENGTH_SHORT).show();
             correct_score++;
         } else {

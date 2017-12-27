@@ -50,37 +50,37 @@
             android:layout_height="wrap_content"
             android:text="@string/ny_question_2" />
 
-                <RadioGroup
-                    android:id="@+id/radio_group1"
-                    style="@style/RadioButtons"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/radio_group1"
+            style="@style/RadioButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/answer1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/ny_q2_var_1" />
+            <RadioButton
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ny_q2_var_1" />
 
-                    <RadioButton
-                        android:id="@+id/answer2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/ny_q2_var_2" />
+            <RadioButton
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ny_q2_var_2" />
 
-                    <RadioButton
-                        android:id="@+id/answer3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/ny_q2_var_3" />
+            <RadioButton
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ny_q2_var_3" />
 
-                    <RadioButton
-                        android:id="@+id/answer4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/ny_q2_var_4" />
-                </RadioGroup>
+            <RadioButton
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ny_q2_var_4" />
+        </RadioGroup>
 
         <TextView
             android:id="@+id/answer"
@@ -89,11 +89,34 @@
             android:layout_height="wrap_content"
             android:text="@string/ny_answer_2" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/main_screen"
+                style="@style/ny_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_screen"
+                android:visibility="invisible" />
+
             <Button
                 android:id="@+id/next_question"
                 style="@style/ny_buttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/nextQuestion" />
+
+            <Button
+                android:id="@+id/share"
+                style="@style/ny_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share"
+                android:visibility="invisible" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

@@ -39,8 +39,13 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
     // RadioGroup radioGroup2;
     //Тут мы создаем переменную для хранения Button
     Button nextQuestion;
+    Button shareButton;
+    Button mainScreenButton;
     //Другое
     String qnum;
+    String resultMessage;
+    // Here we declare a variable to store player's name
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,16 +60,24 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
         answer2 = findViewById(R.id.answer2);
         answer3 = findViewById(R.id.answer3);
         answer4 = findViewById(R.id.answer4);
-        // radioGroup2 = findViewById(R.id.radio_group2);
-        // radioGroup2.setOnCheckedChangeListener(this);
         ny_answer = findViewById(R.id.answer);
         nextQuestion = (Button) findViewById(R.id.next_question);
         nextQuestion.setOnClickListener(this);
+        shareButton = (Button) findViewById(R.id.share);
+        shareButton.setOnClickListener(this);
+        mainScreenButton = (Button) findViewById(R.id.main_screen);
+        mainScreenButton.setOnClickListener(this);
         currentQuestion = getIntent().getExtras().getInt("current_question");
         correct_score = getIntent().getExtras().getInt("correct_score");
         incorrect_score = getIntent().getExtras().getInt("incorrect_score");
         totalNumberOfQuestions = getIntent().getExtras().getInt("total_number_of_questions");
-        Question2();
+        if (currentQuestion == 2) {
+            Question2();
+        } else if (currentQuestion == 7) {
+            Question7();
+        } else if (currentQuestion == 9) {
+            Question9();
+        }
     }
 
     public void Question2() {
@@ -149,6 +162,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
         answer4.setText(R.string.ny_q10_var_4);
         ny_answer.setText(R.string.ny_answer_10);
         ny_answer.setVisibility(View.INVISIBLE);
+        nextQuestion.setText(R.string.submit_button);
+        mainScreenButton.setVisibility(View.VISIBLE);
+        shareButton.setVisibility(View.VISIBLE);
     }
 
     public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -160,6 +176,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -169,6 +188,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -178,6 +200,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         correct_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
@@ -187,6 +212,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -200,6 +228,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         correct_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
@@ -209,6 +240,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -218,6 +252,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -227,6 +264,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -240,6 +280,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -249,6 +292,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -258,6 +304,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -267,6 +316,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         correct_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
@@ -280,6 +332,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -289,6 +344,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -298,6 +356,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         correct_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
@@ -307,6 +368,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -320,6 +384,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -329,6 +396,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -338,6 +408,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -347,6 +420,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         correct_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
@@ -360,6 +436,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -369,6 +448,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         correct_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
@@ -378,6 +460,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -387,6 +472,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -400,6 +488,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         correct_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
@@ -409,6 +500,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer3.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -418,6 +512,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer4.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer4.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -427,6 +524,9 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                         answer1.setTextColor(getResources().getColor(R.color.questions_color));
                         answer2.setTextColor(getResources().getColor(R.color.questions_color));
                         answer3.setTextColor(getResources().getColor(R.color.questions_color));
+                        answer1.setEnabled(false);
+                        answer2.setEnabled(false);
+                        answer3.setEnabled(false);
                         ny_answer.setVisibility(View.VISIBLE);
                         incorrect_score++;
                         Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
@@ -445,6 +545,42 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
         startActivity(openCheckBoxesActivity);
     }
 
+    // This method is called by clicking on Submit button. It creates and displays a toast with the results of the game.
+    public void submit() {
+        Intent openNYQuiz = getIntent();
+        name = openNYQuiz.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String resultMessage = createQuizSummary(name, correct_score, incorrect_score, totalNumberOfQuestions);
+        Toast.makeText(getApplicationContext(), resultMessage, Toast.LENGTH_LONG).show();
+    }
+
+    // This method creates Quiz summary.
+    private String createQuizSummary(String name, int correct_score, int incorrect_score, int totalNumberOfQuestions) {
+        resultMessage = getString(R.string.nameSummary, name);
+        resultMessage += "\n" + getString(R.string.well_done);
+        resultMessage += "\n" + getString(R.string.results);
+        resultMessage += "\n" + getString(R.string.total_correct, correct_score, totalNumberOfQuestions);
+        resultMessage += "\n" + getString(R.string.total_incorrect, incorrect_score, totalNumberOfQuestions);
+        resultMessage += "\n" + getString(R.string.tryAnother);
+        return resultMessage;
+    }
+
+    // This method is called by clicking on Main screen button. It returns the user to the Main screen.
+    public void mainActivity() {
+        Intent MainActivity = new Intent(this, MainActivity.class);
+        startActivity(MainActivity);
+    }
+
+    // This method is called by clicking on Share button. It allows to share your game results via e-mail, social apps, etc.
+    public void share() {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, resultMessage);
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Quiz results");
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.next_question:
@@ -452,8 +588,28 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
                     Toast.makeText(this, R.string.not_chosen, Toast.LENGTH_SHORT).show();
                     return;
                 }
+                if (currentQuestion == 10) {
+                    submit();
+                    return;
+                }
+                break;
+            case R.id.main_screen:
+                mainActivity();
+                break;
+            case R.id.share:
+                share();
+                break;
         }
         currentQuestion++;
+        radioGroup1.clearCheck();
+        answer1.setTextColor(getResources().getColor(R.color.questions_color));
+        answer2.setTextColor(getResources().getColor(R.color.questions_color));
+        answer3.setTextColor(getResources().getColor(R.color.questions_color));
+        answer4.setTextColor(getResources().getColor(R.color.questions_color));
+        answer1.setEnabled(true);
+        answer2.setEnabled(true);
+        answer3.setEnabled(true);
+        answer4.setEnabled(true);
         switch (currentQuestion) {
             case 3:
                 Question3();
@@ -467,14 +623,8 @@ public class RadioButtonsActivity extends AppCompatActivity implements View.OnCl
             case 6:
                 openCheckBoxesActivity();
                 break;
-            case 7:
-                Question7();
-                break;
             case 8:
                 openCheckBoxesActivity();
-                break;
-            case 9:
-                Question9();
                 break;
             case 10:
                 Question10();

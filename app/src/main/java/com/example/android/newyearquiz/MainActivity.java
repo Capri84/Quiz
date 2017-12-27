@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
     // This method calls NY Quiz Activity
     public void openNYQuiz(View view) {
         Intent openNYQuiz = new Intent(this, NewYearQuizActivity.class);
+        EditText nameField = (EditText) findViewById(R.id.name);
+        String message = nameField.getText().toString().trim();
+        openNYQuiz.putExtra(EXTRA_MESSAGE, message);
         startActivity(openNYQuiz);
     }
 
@@ -25,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     public void openEmojiQuiz(View view) {
         Intent openEmojiQuiz = new Intent(this, EmojiActivity.class);
         EditText nameField = (EditText) findViewById(R.id.name);
-        String message = nameField.getText().toString();
+        String message = nameField.getText().toString().trim();
         openEmojiQuiz.putExtra(EXTRA_MESSAGE, message);
         startActivity(openEmojiQuiz);
     }
