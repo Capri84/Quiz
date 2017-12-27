@@ -94,63 +94,71 @@ public class CheckBoxesActivity extends AppCompatActivity implements View.OnClic
     public void onCheckedChanged(CompoundButton checkbox, boolean isChecked) {
         switch (currentQuestion) {
             case 6:
-                if (answer1.isChecked()) {
-                    answer1.setTextColor(getResources().getColor(R.color.correct_answer_color));
-                    checkbox_counter++;
-                } else if (answer2.isChecked()) {
-                    answer2.setTextColor(getResources().getColor(R.color.wrong_answer_color));
-                    checkbox_counter++;
-                } else if (answer3.isChecked()) {
-                    answer3.setTextColor(getResources().getColor(R.color.wrong_answer_color));
-                    checkbox_counter++;
-                } else if (answer4.isChecked()) {
-                    answer4.setTextColor(getResources().getColor(R.color.correct_answer_color));
-                    checkbox_counter++;
-                }
-                if (checkbox_counter == 2) {
-                        answer1.setEnabled(false);
-                        answer2.setEnabled(false);
-                        answer3.setEnabled(false);
-                    answer4.setEnabled(false);
-                    if (answer1.isChecked() && answer4.isChecked()) {
-                        ny_answer.setVisibility(View.VISIBLE);
-                        correct_score++;
-                        Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
-                    } else {
-                        ny_answer.setVisibility(View.VISIBLE);
-                        incorrect_score++;
-                        Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
+                while (checkbox_counter != 2) {
+                    if (answer1.isChecked()) {
+                        answer1.setTextColor(getResources().getColor(R.color.correct_answer_color));
+                        checkbox_counter++;
+                        return;
+                    } else if (answer2.isChecked()) {
+                        answer2.setTextColor(getResources().getColor(R.color.wrong_answer_color));
+                        checkbox_counter++;
+                        return;
+                    } else if (answer3.isChecked()) {
+                        answer3.setTextColor(getResources().getColor(R.color.wrong_answer_color));
+                        checkbox_counter++;
+                        return;
+                    } else if (answer4.isChecked()) {
+                        answer4.setTextColor(getResources().getColor(R.color.correct_answer_color));
+                        checkbox_counter++;
+                        return;
                     }
-                }
-                break;
-            case 8:
-                if (answer1.isChecked()) {
-                    answer1.setTextColor(getResources().getColor(R.color.wrong_answer_color));
-                    checkbox_counter++;
-                } else if (answer2.isChecked()) {
-                    answer2.setTextColor(getResources().getColor(R.color.correct_answer_color));
-                    checkbox_counter++;
-                } else if (answer3.isChecked()) {
-                    answer3.setTextColor(getResources().getColor(R.color.correct_answer_color));
-                    checkbox_counter++;
-                } else if (answer4.isChecked()) {
-                    answer4.setTextColor(getResources().getColor(R.color.wrong_answer_color));
-                    checkbox_counter++;
                 }
                 if (checkbox_counter == 2) {
                     answer1.setEnabled(false);
                     answer2.setEnabled(false);
                     answer3.setEnabled(false);
                     answer4.setEnabled(false);
-                    if (answer2.isChecked() && answer3.isChecked()) {
-                        ny_answer.setVisibility(View.VISIBLE);
-                        correct_score++;
-                        Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
-                    } else {
-                        ny_answer.setVisibility(View.VISIBLE);
-                        incorrect_score++;
-                        Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
+                }
+                if (answer1.isChecked() && answer4.isChecked()) {
+                    ny_answer.setVisibility(View.VISIBLE);
+                    correct_score++;
+                    Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
+                } else {
+                    ny_answer.setVisibility(View.VISIBLE);
+                    incorrect_score++;
+                    Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case 8:
+                while (checkbox_counter != 2) {
+                    if (answer1.isChecked()) {
+                        answer1.setTextColor(getResources().getColor(R.color.wrong_answer_color));
+                        checkbox_counter++;
+                    } else if (answer2.isChecked()) {
+                        answer2.setTextColor(getResources().getColor(R.color.correct_answer_color));
+                        checkbox_counter++;
+                    } else if (answer3.isChecked()) {
+                        answer3.setTextColor(getResources().getColor(R.color.correct_answer_color));
+                        checkbox_counter++;
+                    } else if (answer4.isChecked()) {
+                        answer4.setTextColor(getResources().getColor(R.color.wrong_answer_color));
+                        checkbox_counter++;
                     }
+                }
+                if (checkbox_counter == 2) {
+                    answer1.setEnabled(false);
+                    answer2.setEnabled(false);
+                    answer3.setEnabled(false);
+                    answer4.setEnabled(false);
+                }
+                if (answer2.isChecked() && answer3.isChecked()) {
+                    ny_answer.setVisibility(View.VISIBLE);
+                    correct_score++;
+                    Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
+                } else {
+                    ny_answer.setVisibility(View.VISIBLE);
+                    incorrect_score++;
+                    Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
                 }
                 break;
         }

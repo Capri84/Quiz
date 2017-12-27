@@ -32,4 +32,13 @@ public class MainActivity extends AppCompatActivity {
         openEmojiQuiz.putExtra(EXTRA_MESSAGE, message);
         startActivity(openEmojiQuiz);
     }
+
+    // This method calls Inventions Quiz Activity
+    public void openInventionsQuiz(View view) {
+        Intent openInventionsQuiz = new Intent(this, InventionsActivity.class);
+        EditText nameField = (EditText) findViewById(R.id.name);
+        String message = nameField.getText().toString().trim();
+        openInventionsQuiz.putExtra(EXTRA_MESSAGE, message);
+        startActivity(openInventionsQuiz);
+    }
 }
