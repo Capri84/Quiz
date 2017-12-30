@@ -75,6 +75,7 @@
                 android:layout_marginLeft="@dimen/border"
                 android:layout_weight="1"
                 android:background="@drawable/borders"
+                android:onClick="openInventionsQuiz"
                 android:scaleType="centerInside"
                 android:src="@drawable/inventions" />
         </LinearLayout>
