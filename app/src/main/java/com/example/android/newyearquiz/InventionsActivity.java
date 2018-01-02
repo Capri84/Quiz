@@ -34,9 +34,6 @@ public class InventionsActivity extends AppCompatActivity implements RadioGroup.
     String resultMessage;
     // Here we declare a variable to store a string "Question (current question number) out of (total number of questions)"
     String qnum;
-    int[] question_ids = {R.id.inv_question1_number, R.id.inv_question2_number, R.id.inv_question3_number, R.id.inv_question4_number,
-            R.id.inv_question5_number, R.id.inv_question6_number, R.id.inv_question7_number, R.id.inv_question8_number,
-            R.id.inv_question9_number, R.id.inv_question10_number};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

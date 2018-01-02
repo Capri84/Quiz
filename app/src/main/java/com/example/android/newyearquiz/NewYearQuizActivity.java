@@ -35,10 +35,6 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
     int incorrect_score = 0;
     //Тут мы создаем переменную для хранения номера вопроса
     TextView question_number;
-    //Тут мы создаем переменную для хранения картинки
-    ImageView question_image;
-    //Тут мы создаем переменную для хранения вопросов
-    TextView ny_question;
     //Тут мы создаем переменную для хранения Button
     Button nextQuestion;
     //Другое
@@ -50,8 +46,6 @@ public class NewYearQuizActivity extends AppCompatActivity implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ny_edittext);
         question_number = findViewById(R.id.question_number);
-        question_image = findViewById(R.id.question_image);
-        ny_question = findViewById(R.id.question);
         editText = (EditText) findViewById(R.id.ny_answer1);
         nextQuestion = (Button) findViewById(R.id.next_question);
         nextQuestion.setOnClickListener(this);

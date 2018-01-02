@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         String message = nameField.getText().toString().trim();
         openNYQuiz.putExtra(EXTRA_MESSAGE, message);
         startActivity(openNYQuiz);
+        this.finish();
     }
 
     // This method calls Emoji Quiz Activity
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         String message = nameField.getText().toString().trim();
         openEmojiQuiz.putExtra(EXTRA_MESSAGE, message);
         startActivity(openEmojiQuiz);
+        this.finish();
     }
 
     // This method calls Inventions Quiz Activity
@@ -40,5 +42,6 @@ public class MainActivity extends AppCompatActivity {
         String message = nameField.getText().toString().trim();
         openInventionsQuiz.putExtra(EXTRA_MESSAGE, message);
         startActivity(openInventionsQuiz);
+        this.finish();
     }
 }
