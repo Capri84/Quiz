@@ -18,11 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewYearQuizActivity" />
         <activity android:name=".EmojiActivity" />
-        <activity android:name=".RadioButtonsActivity" />
-        <activity android:name=".CheckBoxesActivity" />
-        <activity android:name=".InventionsActivity"></activity>
+        <activity android:name=".InventionsActivity" />
+        <activity android:name=".invAnswersActivity"></activity>
     </application>
 
 </manifest>

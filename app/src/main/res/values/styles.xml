@@ -31,7 +31,7 @@
         <item name="android:textColor">@color/questions_color</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@color/ny_image_background</item>
-        <item name="android:fontFamily">sans-serif-condensed-light</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <!-- RadioButtons style-->
@@ -39,38 +39,6 @@
         <item name="android:layout_marginLeft">@dimen/layout_margin1</item>
         <item name="android:layout_marginRight">@dimen/layout_margin1</item>
         <item name="android:background">@color/ny_image_background</item>
-    </style>
-
-    <!-- Emoji variants margins-->
-    <style name="emoji_var_margins">
-        <item name="android:layout_marginLeft">@dimen/layout_margin4</item>
-        <item name="android:gravity">center_vertical</item>
-    </style>
-
-    <!-- Emoji answer margins-->
-    <style name="emoji_answer_margins">
-        <item name="android:layout_marginRight">@dimen/layout_margin3</item>
-        <item name="android:gravity">center_vertical|right</item>
-    </style>
-
-    <!-- TextView Emoji questions style-->
-    <style name="TextView_emoji_questions">
-        <item name="android:layout_margin">@dimen/layout_margin3</item>
-        <item name="android:textSize">@dimen/text_size2</item>
-        <item name="android:textColor">@color/questions_color</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/borders</item>
-    </style>
-
-    <!-- Emoji buttons style-->
-    <style name="emoji_buttons">
-        <item name="android:background">@drawable/borders</item>
-        <item name="android:layout_marginLeft">@dimen/padding2</item>
-        <item name="android:layout_marginRight">@dimen/padding2</item>
-        <item name="android:layout_marginTop">@dimen/padding1</item>
-        <item name="android:layout_marginBottom">@dimen/border</item>
-        <item name="android:paddingLeft">@dimen/border</item>
-        <item name="android:paddingRight">@dimen/border</item>
     </style>
 
     <!-- NY buttons style-->
@@ -81,6 +49,131 @@
         <item name="android:layout_marginBottom">@dimen/padding1</item>
         <item name="android:paddingLeft">@dimen/padding2</item>
         <item name="android:paddingRight">@dimen/padding2</item>
+    </style>
+
+    <!--EMOJI QUIZ STYLES-->
+
+    <!-- Emoji header-->
+    <style name="emoji_header">
+        <item name="android:layout_marginBottom">@dimen/padding1</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin3</item>
+        <item name="android:fontFamily">@font/popcorn_time</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+        <item name="android:textColor">@color/wrong_answer_color</item>
+        <item name="android:textSize">@dimen/emoji_quiz_text_size</item>
+    </style>
+
+    <!-- Emoji question number-->
+    <style name="emoji_question_number">
+        <item name="android:layout_marginBottom">@dimen/padding1</item>
+        <item name="android:layout_marginTop">@dimen/padding2</item>
+        <item name="android:fontFamily">@font/quiz_font1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+        <item name="android:textSize">@dimen/text_size2</item>
+    </style>
+
+    <!-- Emoji question images-->
+    <style name="emoji_question_images">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/border</item>
+        <item name="android:background">@drawable/borders</item>
+        <item name="android:padding">@dimen/border</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Emoji variants margins-->
+    <style name="emoji_var_margins">
+        <item name="android:layout_marginLeft">@dimen/layout_margin4</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- Emoji answer margins-->
+    <style name="emoji_answer_margins">
+        <item name="android:layout_marginRight">@dimen/layout_margin3</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <!-- Emoji view margins-->
+    <style name="emoji_view_margins">
+        <item name="android:layout_marginTop">@dimen/padding2</item>
+        <item name="android:layout_marginBottom">@dimen/padding2</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <!-- Emoji buttons style-->
+    <style name="emoji_buttons">
+        <item name="android:background">@drawable/borders</item>
+        <item name="android:layout_marginLeft">@dimen/padding2</item>
+        <item name="android:layout_marginRight">@dimen/padding2</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin3</item>
+        <item name="android:layout_marginBottom">@dimen/padding2</item>
+        <item name="android:paddingLeft">@dimen/border</item>
+        <item name="android:paddingRight">@dimen/border</item>
+    </style>
+
+    <!--INVENTIONS QUIZ STYLES-->
+
+    <!-- Inventions header-->
+    <style name="inventions_header">
+        <item name="android:layout_marginBottom">@dimen/padding1</item>
+        <item name="android:layout_marginTop">@dimen/padding1</item>
+        <item name="android:fontFamily">@font/theroots</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+        <item name="android:textColor">@color/wrong_answer_color</item>
+        <item name="android:textSize">@dimen/inv_quiz_text_size</item>
+    </style>
+
+    <!-- Inventions questions style-->
+    <style name="inventions_questions">
+        <item name="android:textSize">@dimen/text_size2</item>
+        <item name="android:textColor">@color/questions_color</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:background">@drawable/ny_borders</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:padding">@dimen/padding1</item>
+        <item name="android:layout_margin">@dimen/layout_margin3</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Inventions answers style-->
+    <style name="inventions_answers">
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:fontFamily">sans-serif-condensed-light</item>
+    </style>
+
+    <!-- Inventions TextView answer/question style-->
+    <style name="inventions_tv_answers">
+        <item name="android:padding">@dimen/padding1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Inventions comments style-->
+    <style name="inventions_comment">
+        <item name="android:textSize">@dimen/text_size2</item>
+        <item name="android:textColor">@color/questions_color</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:background">@drawable/ny_borders</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:padding">@dimen/padding1</item>
+        <item name="android:layout_margin">@dimen/layout_margin3</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Inventions buttons style-->
+    <style name="inventions_buttons">
+        <item name="android:background">@drawable/borders</item>
+        <item name="android:layout_marginLeft">@dimen/padding2</item>
+        <item name="android:layout_marginRight">@dimen/padding2</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin3</item>
+        <item name="android:layout_marginBottom">@dimen/padding2</item>
+        <item name="android:paddingLeft">@dimen/border</item>
+        <item name="android:paddingRight">@dimen/border</item>
+        <item name="android:fontFamily">@font/quiz_font1</item>
     </style>
 
 </resources>

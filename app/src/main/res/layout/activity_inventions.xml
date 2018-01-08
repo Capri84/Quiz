@@ -494,37 +494,15 @@
                 android:padding="@dimen/padding1"
                 android:text="@string/inv_q_9" />
 
-            <RadioGroup
-                android:id="@+id/radio_group9"
-                style="@style/RadioButtons"
+            <EditText
+                android:id="@+id/inv_answer9"
+                style="@style/name_field_margins"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <RadioButton
-                    android:id="@+id/answer9_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/inv_q9_var_1" />
-
-                <RadioButton
-                    android:id="@+id/answer9_2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/inv_q9_var_2" />
-
-                <RadioButton
-                    android:id="@+id/answer9_3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/inv_q9_var_3" />
-
-                <RadioButton
-                    android:id="@+id/answer9_4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/inv_q9_var_4" />
-            </RadioGroup>
+                android:gravity="bottom|center_horizontal"
+                android:hint="@string/inv9_hint"
+                android:inputType="number"
+                android:textStyle="italic" />
 
             <View
                 android:layout_width="match_parent"
@@ -550,37 +528,40 @@
                 android:padding="@dimen/padding1"
                 android:text="@string/inv_q_10" />
 
-            <RadioGroup
-                android:id="@+id/radio_group10"
+            <LinearLayout
                 style="@style/RadioButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <RadioButton
-                    android:id="@+id/answer10_1"
+                <CheckBox
+                    android:id="@+id/checkbox1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="@string/inv_q10_var_1" />
 
-                <RadioButton
-                    android:id="@+id/answer10_2"
+                <CheckBox
+                    android:id="@+id/checkbox2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="@string/inv_q10_var_2" />
 
-                <RadioButton
-                    android:id="@+id/answer10_3"
+                <CheckBox
+                    android:id="@+id/checkbox3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="@string/inv_q10_var_3" />
 
-                <RadioButton
-                    android:id="@+id/answer10_4"
+                <CheckBox
+                    android:id="@+id/checkbox4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="@string/inv_q10_var_4" />
-            </RadioGroup>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -589,11 +570,12 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button_to_main"
+                    android:id="@+id/answers_button"
                     style="@style/emoji_buttons"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/main_screen" />
+                    android:text="@string/answers"
+                    android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/submit_button"
@@ -607,7 +589,8 @@
                     style="@style/emoji_buttons"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/share" />
+                    android:text="@string/share"
+                    android:visibility="invisible" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

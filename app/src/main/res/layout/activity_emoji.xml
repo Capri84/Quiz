@@ -13,34 +13,22 @@
         android:orientation="vertical">
 
         <TextView
+            style="@style/emoji_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/padding2"
-            android:fontFamily="@font/acfilmstrip"
-            android:text="@string/emoji_quiz"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textColor="@color/em_header_color"
-            android:textSize="@dimen/emoji_quiz_text_size" />
+            android:text="@string/emoji_quiz" />
 
         <TextView
             android:id="@+id/question1_number"
+            style="@style/emoji_question_number"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/border"
-            android:fontFamily="cursive"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="@dimen/text_size" />
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/question_image1"
+            style="@style/emoji_question_images"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/borders"
-            android:padding="@dimen/border"
-            android:scaleType="centerCrop"
             android:src="@drawable/forrest_gump" />
 
         <LinearLayout
@@ -53,7 +41,6 @@
                 style="@style/emoji_var_margins"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:layout_weight="2"
                 android:orientation="vertical">
 
@@ -80,7 +67,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/em_q1_var_4" />
-
             </RadioGroup>
 
             <ImageView
@@ -89,34 +75,26 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerInside"
                 android:src="@drawable/forrest_gump_answer1"
                 android:visibility="invisible" />
         </LinearLayout>
 
         <View
+            style="@style/emoji_view_margins"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorAccent" />
+            android:layout_height="1dp" />
 
         <TextView
             android:id="@+id/question2_number"
+            style="@style/emoji_question_number"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/border"
-            android:fontFamily="cursive"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="@dimen/text_size" />
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/question_image2"
+            style="@style/emoji_question_images"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/borders"
-            android:padding="@dimen/border"
-            android:scaleType="centerCrop"
             android:src="@drawable/mib" />
 
         <LinearLayout
@@ -129,7 +107,6 @@
                 style="@style/emoji_var_margins"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:layout_weight="2"
                 android:orientation="vertical">
 
@@ -165,34 +142,26 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerInside"
                 android:src="@drawable/mib_answer"
                 android:visibility="invisible" />
         </LinearLayout>
 
         <View
+            style="@style/emoji_view_margins"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorAccent" />
+            android:layout_height="1dp" />
 
         <TextView
             android:id="@+id/question3_number"
+            style="@style/emoji_question_number"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/border"
-            android:fontFamily="cursive"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="@dimen/text_size" />
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/question_image3"
+            style="@style/emoji_question_images"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/borders"
-            android:padding="@dimen/border"
-            android:scaleType="centerCrop"
             android:src="@drawable/breakfast_at_tiffany" />
 
         <LinearLayout
@@ -205,7 +174,6 @@
                 style="@style/emoji_var_margins"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:layout_weight="2"
                 android:orientation="vertical">
 
@@ -240,34 +208,26 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerInside"
                 android:src="@drawable/breakfast_tiffany_answer"
                 android:visibility="invisible" />
         </LinearLayout>
 
         <View
+            style="@style/emoji_view_margins"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorAccent" />
+            android:layout_height="1dp" />
 
         <TextView
             android:id="@+id/question4_number"
+            style="@style/emoji_question_number"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/border"
-            android:fontFamily="cursive"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="@dimen/text_size" />
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/question_image4"
+            style="@style/emoji_question_images"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/borders"
-            android:padding="@dimen/border"
-            android:scaleType="centerCrop"
             android:src="@drawable/mask" />
 
         <LinearLayout
@@ -280,7 +240,6 @@
                 style="@style/emoji_var_margins"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:layout_weight="2"
                 android:orientation="vertical">
 
@@ -316,34 +275,26 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerInside"
                 android:src="@drawable/mask_answer"
                 android:visibility="invisible" />
         </LinearLayout>
 
         <View
+            style="@style/emoji_view_margins"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorAccent" />
+            android:layout_height="1dp" />
 
         <TextView
             android:id="@+id/question5_number"
+            style="@style/emoji_question_number"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/border"
-            android:fontFamily="cursive"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="@dimen/text_size" />
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/question_image5"
+            style="@style/emoji_question_images"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/borders"
-            android:padding="@dimen/border"
-            android:scaleType="centerCrop"
             android:src="@drawable/lamb_silence" />
 
         <LinearLayout
@@ -356,7 +307,6 @@
                 style="@style/emoji_var_margins"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:layout_weight="2"
                 android:orientation="vertical">
 
@@ -392,34 +342,26 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerInside"
                 android:src="@drawable/lambs_answer"
                 android:visibility="invisible" />
         </LinearLayout>
 
         <View
+            style="@style/emoji_view_margins"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorAccent" />
+            android:layout_height="1dp" />
 
         <TextView
             android:id="@+id/question6_number"
+            style="@style/emoji_question_number"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/border"
-            android:fontFamily="cursive"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="@dimen/text_size" />
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/question_image6"
+            style="@style/emoji_question_images"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/borders"
-            android:padding="@dimen/border"
-            android:scaleType="centerCrop"
             android:src="@drawable/devil_prada" />
 
         <LinearLayout
@@ -432,7 +374,6 @@
                 style="@style/emoji_var_margins"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:layout_weight="2"
                 android:orientation="vertical">
 
@@ -468,34 +409,26 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerInside"
                 android:src="@drawable/prada_answer"
                 android:visibility="invisible" />
         </LinearLayout>
 
         <View
+            style="@style/emoji_view_margins"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorAccent" />
+            android:layout_height="1dp" />
 
         <TextView
             android:id="@+id/question7_number"
+            style="@style/emoji_question_number"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/border"
-            android:fontFamily="cursive"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="@dimen/text_size" />
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/question_image7"
+            style="@style/emoji_question_images"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/borders"
-            android:padding="@dimen/border"
-            android:scaleType="centerCrop"
             android:src="@drawable/signs" />
 
         <LinearLayout
@@ -508,7 +441,6 @@
                 style="@style/emoji_var_margins"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:layout_weight="2"
                 android:orientation="vertical">
 
@@ -543,34 +475,26 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerInside"
                 android:src="@drawable/signs_answer"
                 android:visibility="invisible" />
         </LinearLayout>
 
         <View
+            style="@style/emoji_view_margins"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorAccent" />
+            android:layout_height="1dp" />
 
         <TextView
             android:id="@+id/question8_number"
+            style="@style/emoji_question_number"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/border"
-            android:fontFamily="cursive"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="@dimen/text_size" />
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/question_image8"
+            style="@style/emoji_question_images"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/borders"
-            android:padding="@dimen/border"
-            android:scaleType="centerCrop"
             android:src="@drawable/matrix" />
 
         <LinearLayout
@@ -583,7 +507,6 @@
                 style="@style/emoji_var_margins"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:layout_weight="2"
                 android:orientation="vertical">
 
@@ -619,34 +542,26 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerInside"
                 android:src="@drawable/matrix_answer"
                 android:visibility="invisible" />
         </LinearLayout>
 
         <View
+            style="@style/emoji_view_margins"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorAccent" />
+            android:layout_height="1dp" />
 
         <TextView
             android:id="@+id/question9_number"
+            style="@style/emoji_question_number"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/border"
-            android:fontFamily="cursive"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="@dimen/text_size" />
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/question_image9"
+            style="@style/emoji_question_images"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/borders"
-            android:padding="@dimen/border"
-            android:scaleType="centerCrop"
             android:src="@drawable/ted" />
 
         <LinearLayout
@@ -659,7 +574,6 @@
                 style="@style/emoji_var_margins"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:layout_weight="2"
                 android:orientation="vertical">
 
@@ -695,34 +609,26 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerInside"
                 android:src="@drawable/ted_answer"
                 android:visibility="invisible" />
         </LinearLayout>
 
         <View
+            style="@style/emoji_view_margins"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorAccent" />
+            android:layout_height="1dp" />
 
         <TextView
             android:id="@+id/question10_number"
+            style="@style/emoji_question_number"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/border"
-            android:fontFamily="cursive"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="@dimen/text_size" />
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/question_image10"
+            style="@style/emoji_question_images"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/borders"
-            android:padding="@dimen/border"
-            android:scaleType="centerCrop"
             android:src="@drawable/american_beauty" />
 
         <LinearLayout
@@ -735,7 +641,6 @@
                 style="@style/emoji_var_margins"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:layout_weight="2"
                 android:orientation="vertical">
 
@@ -770,7 +675,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerInside"
                 android:src="@drawable/beauty_answer"
                 android:visibility="invisible" />
         </LinearLayout>
@@ -782,24 +686,24 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/button_to_main"
                 style="@style/emoji_buttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="mainActivity"
                 android:text="@string/main_screen" />
 
             <Button
+                android:id="@+id/submit_button"
                 style="@style/emoji_buttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="submit"
                 android:text="@string/submit_button" />
 
             <Button
+                android:id="@+id/share_button"
                 style="@style/emoji_buttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="share"
                 android:text="@string/share" />
         </LinearLayout>
     </LinearLayout>

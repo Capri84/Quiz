@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -13,7 +14,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
+public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, View.OnClickListener {
     // Number of the current question
     int currentQuestion = 1;
     // Total number of questions
@@ -32,12 +33,17 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
             answer_image6, answer_image7, answer_image8, answer_image9, answer_image10;
     // Here we declare RadioGroups
     RadioGroup rg1, rg2, rg3, rg4, rg5, rg6, rg7, rg8, rg9, rg10;
+    // Here we declare Buttons
+    Button buttonToMain, submitButton, shareButton;
     // Here we declare a variable to store player's name
     String name;
     // Here we declare a variable for the quiz results toast
     String resultMessage;
     // Here we declare a variable to store a string "Question (current question number) out of (total number of questions)"
     String qnum;
+    // This is an array of id's of question numbers
+    int[] question_numbers = {R.id.question1_number, R.id.question2_number, R.id.question3_number, R.id.question4_number, R.id.question5_number,
+            R.id.question6_number, R.id.question7_number, R.id.question8_number, R.id.question9_number, R.id.question10_number};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,96 +93,26 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         answer_image8 = (ImageView) findViewById(R.id.answer8);
         answer_image9 = (ImageView) findViewById(R.id.answer9);
         answer_image10 = (ImageView) findViewById(R.id.answer10);
-        //Here we call methods to fill the string "Question (current question number) out of (total number of questions)"
-        Question1();
-        Question2();
-        Question3();
-        Question4();
-        Question5();
-        Question6();
-        Question7();
-        Question8();
-        Question9();
-        Question10();
+        // Here we initialize Buttons
+        buttonToMain = (Button) findViewById(R.id.button_to_main);
+        submitButton = (Button) findViewById(R.id.submit_button);
+        shareButton = (Button) findViewById(R.id.share_button);
+        // Here we set the listener to the Buttons
+        buttonToMain.setOnClickListener(this);
+        submitButton.setOnClickListener(this);
+        shareButton.setOnClickListener(this);
+        // Here we set numbers of the questions
+        setQuestion_numbers();
     }
 
-    // Method which fills layout with string "Question 1 out of 10"
-    public void Question1() {
-        question_number = findViewById(R.id.question1_number);
-        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
-        question_number.setText(qnum);
-    }
-
-    // Method which fills layout with string "Question 2 out of 10"
-    public void Question2() {
-        currentQuestion++;
-        question_number = findViewById(R.id.question2_number);
-        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
-        question_number.setText(qnum);
-    }
-
-    // Method which fills layout with string "Question 3 out of 10"
-    public void Question3() {
-        currentQuestion++;
-        question_number = findViewById(R.id.question3_number);
-        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
-        question_number.setText(qnum);
-    }
-
-    // Method which fills layout with string "Question 4 out of 10"
-    public void Question4() {
-        currentQuestion++;
-        question_number = findViewById(R.id.question4_number);
-        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
-        question_number.setText(qnum);
-    }
-
-    // Method which fills layout with string "Question 5 out of 10"
-    public void Question5() {
-        currentQuestion++;
-        question_number = findViewById(R.id.question5_number);
-        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
-        question_number.setText(qnum);
-    }
-
-    // Method which fills layout with string "Question 6 out of 10"
-    public void Question6() {
-        currentQuestion++;
-        question_number = findViewById(R.id.question6_number);
-        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
-        question_number.setText(qnum);
-    }
-
-    // Method which fills layout with string "Question 7 out of 10"
-    public void Question7() {
-        currentQuestion++;
-        question_number = findViewById(R.id.question7_number);
-        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
-        question_number.setText(qnum);
-    }
-
-    // Method which fills layout with string "Question 8 out of 10"
-    public void Question8() {
-        currentQuestion++;
-        question_number = findViewById(R.id.question8_number);
-        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
-        question_number.setText(qnum);
-    }
-
-    // Method which fills layout with string "Question 9 out of 10"
-    public void Question9() {
-        currentQuestion++;
-        question_number = findViewById(R.id.question9_number);
-        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
-        question_number.setText(qnum);
-    }
-
-    // Method which fills layout with string "Question 10 out of 10"
-    public void Question10() {
-        currentQuestion++;
-        question_number = findViewById(R.id.question10_number);
-        qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
-        question_number.setText(qnum);
+    // This method set numbers to the questions
+    public void setQuestion_numbers() {
+        for (int j = 0; j < question_numbers.length; j++) {
+            question_number = findViewById(question_numbers[j]);
+            qnum = getString(R.string.questionNumber, currentQuestion, totalNumberOfQuestions);
+            question_number.setText(qnum);
+            currentQuestion++;
+        }
     }
 
     /**
@@ -377,10 +313,12 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         }
     }
 
-    /** This method is called by clicking on Submit button. It checks if at least one answer
-     has been selected in the quiz, and if not, asks to choose, and if so, creates and displays
-     a toast with the results of the game.*/
-    public void submit(View view) {
+    /**
+     * This method is called by clicking on Submit button. It checks if at least one answer
+     * has been selected in the quiz, and if not, asks to choose, and if so, creates and displays
+     * a toast with the results of the game.
+     */
+    public void submit() {
         if ((rg1.getCheckedRadioButtonId() == -1) && (rg2.getCheckedRadioButtonId() == -1) && (rg3.getCheckedRadioButtonId() == -1) &&
                 (rg4.getCheckedRadioButtonId() == -1) && (rg5.getCheckedRadioButtonId() == -1) && (rg6.getCheckedRadioButtonId() == -1) &&
                 (rg7.getCheckedRadioButtonId() == -1) && (rg8.getCheckedRadioButtonId() == -1) && (rg9.getCheckedRadioButtonId() == -1) &&
@@ -407,13 +345,14 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     }
 
     // This method is called by clicking on Main screen button. It returns the user to the Main screen.
-    public void mainActivity(View view) {
+    public void mainActivity() {
         Intent MainActivity = new Intent(this, MainActivity.class);
         startActivity(MainActivity);
+        this.finish();
     }
 
     // This method is called by clicking on Share button. It allows to share your game results via e-mail, social apps, etc.
-    public void share(View view) {
+    public void share() {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT, resultMessage);
@@ -421,5 +360,27 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
+    }
+
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.button_to_main:
+                mainActivity();
+                this.finish();
+                break;
+            case R.id.submit_button:
+                submit();
+                break;
+            case R.id.share_button:
+                share();
+                break;
+        }
+    }
+
+    // This method is called by clicking on Back button. It returns the user to the Main screen and kills this activity.
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(this, MainActivity.class));
+        this.finish();
     }
 }
