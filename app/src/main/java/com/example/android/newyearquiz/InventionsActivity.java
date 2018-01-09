@@ -38,7 +38,8 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
     // Here we declare a variable for the quiz results toast
     String resultMessage;
     // Here we declare a variable to store a string "Question (current question number) out of (total number of questions)"
-    String qnum, answer9, answer10;
+    String qnum, answer9;
+    String answer10 = "";
     // This is an array of id's of question numbers
     int[] question_numbers = {R.id.inv_question1_number, R.id.inv_question2_number, R.id.inv_question3_number, R.id.inv_question4_number, R.id.inv_question5_number,
             R.id.inv_question6_number, R.id.inv_question7_number, R.id.inv_question8_number, R.id.inv_question9_number, R.id.inv_question10_number};
@@ -95,6 +96,7 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
                 activityInventionsBinding.radioGroup7.getCheckedRadioButtonId() == -1 && activityInventionsBinding.radioGroup8.getCheckedRadioButtonId() == -1 &&
                 activityInventionsBinding.invAnswer9.getText().toString().trim().equals("") && (!activityInventionsBinding.checkbox1.isChecked() && !activityInventionsBinding.checkbox2.isChecked() && !activityInventionsBinding.checkbox3.isChecked() && !activityInventionsBinding.checkbox4.isChecked())) {
             Toast.makeText(this, R.string.not_chosen1, Toast.LENGTH_SHORT).show();
+            return;
         } else {
             activityInventionsBinding.answersButton.setVisibility(View.VISIBLE);
             activityInventionsBinding.shareButton.setVisibility(View.VISIBLE);
@@ -125,12 +127,7 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
             }
             if (!activityInventionsBinding.checkbox1.isChecked() && !activityInventionsBinding.checkbox2.isChecked() && !activityInventionsBinding.checkbox3.isChecked() && !activityInventionsBinding.checkbox4.isChecked()) {
                 answer10 = getString(R.string.not_answered);
-                incorrect_score++;
             }
-            // if (activityInventionsBinding.checkbox1.isChecked() && activityInventionsBinding.checkbox4.isChecked()) {
-            //     answer10 = getString(R.string.inv_q10_var_1) + "\n" + getString(R.string.inv_q10_var_4);
-            //     correct_score++;
-            //  } else {
             if (activityInventionsBinding.checkbox1.isChecked()) {
                 answer10 = activityInventionsBinding.checkbox1.getText().toString();
             }
@@ -143,17 +140,17 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
             if (activityInventionsBinding.checkbox4.isChecked()) {
                 answer10 = answer10 + "\n" + activityInventionsBinding.checkbox4.getText().toString();
             }
-            if (answer10 == getString(R.string.inv_q10_var_1) + "\n" + getString(R.string.inv_q10_var_4)) {
+            if (activityInventionsBinding.checkbox1.isChecked() && !activityInventionsBinding.checkbox2.isChecked() && !activityInventionsBinding.checkbox3.isChecked() && activityInventionsBinding.checkbox4.isChecked()) {
                 correct_score++;
             } else {
                 incorrect_score++;
             }
-        }
             Intent openInventionsQuiz = getIntent();
             name = openInventionsQuiz.getStringExtra(MainActivity.EXTRA_MESSAGE);
             String resultMessage = createQuizSummary(name, correct_score, incorrect_score, totalNumberOfQuestions);
             Toast.makeText(getApplicationContext(), resultMessage, Toast.LENGTH_LONG).show();
         }
+    }
 
     // This method creates Quiz summary.
     private String createQuizSummary(String name, int correct_score, int incorrect_score, int totalNumberOfQuestions) {

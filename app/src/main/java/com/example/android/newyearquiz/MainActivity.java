@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     // This method calls Emoji Quiz Activity
     public void openEmojiQuiz(View view) {
         Intent openEmojiQuiz = new Intent(this, EmojiActivity.class);
-        EditText nameField = (EditText) findViewById(R.id.name);
+        EditText nameField = findViewById(R.id.name);
         String message = nameField.getText().toString().trim();
         if (message.equals("")) {
             Toast.makeText(this, R.string.no_name, Toast.LENGTH_SHORT).show();
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     // This method calls Inventions Quiz Activity
     public void openInventionsQuiz(View view) {
         Intent openInventionsQuiz = new Intent(this, InventionsActivity.class);
-        EditText nameField = (EditText) findViewById(R.id.name);
+        EditText nameField = findViewById(R.id.name);
         String message = nameField.getText().toString().trim();
         if (message.equals("")) {
             Toast.makeText(this, R.string.no_name, Toast.LENGTH_SHORT).show();

@@ -21,7 +21,7 @@
     <string name="inv_quiz_answers" translatable="false">Answers and comments</string>
     <string name="submit_button">Submit</string>
     <string name="tryAnother">Try another quiz category at the Main screen of the app!</string>
-    <string name="main_screen">Main screen</string>
+    <string name="main_screen">Home</string>
     <string name="share">Share</string>
     <string name="answers">Answers</string>
     <string name="yourAnswer">Your answer:  <xliff:g example="Helicopter" id="inv_your_answer">%s</xliff:g></string>

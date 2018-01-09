@@ -128,12 +128,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
                 answer1_3.setTextColor(getResources().getColor(R.color.correct_answer_color));
                 answer_image1.setVisibility(View.VISIBLE);
                 correct_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
             } else {
                 checked_answer1.setTextColor(getResources().getColor(R.color.wrong_answer_color));
                 answer_image1.setVisibility(View.VISIBLE);
                 incorrect_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
             }
             // Disable RadioButtons of rg1
             for (int i = 0; i < rg1.getChildCount(); i++) {
@@ -147,12 +145,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
                 answer2_4.setTextColor(getResources().getColor(R.color.correct_answer_color));
                 answer_image2.setVisibility(View.VISIBLE);
                 correct_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
             } else {
                 checked_answer2.setTextColor(getResources().getColor(R.color.wrong_answer_color));
                 answer_image2.setVisibility(View.VISIBLE);
                 incorrect_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
             }
             // Disable RadioButtons of rg2
             for (int i = 0; i < rg2.getChildCount(); i++) {
@@ -166,12 +162,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
                 answer3_2.setTextColor(getResources().getColor(R.color.correct_answer_color));
                 answer_image3.setVisibility(View.VISIBLE);
                 correct_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
             } else {
                 checked_answer3.setTextColor(getResources().getColor(R.color.wrong_answer_color));
                 answer_image3.setVisibility(View.VISIBLE);
                 incorrect_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
             }
             // Disable RadioButtons of rg3
             for (int i = 0; i < rg3.getChildCount(); i++) {
@@ -185,12 +179,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
                 answer4_1.setTextColor(getResources().getColor(R.color.correct_answer_color));
                 answer_image4.setVisibility(View.VISIBLE);
                 correct_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
             } else {
                 checked_answer4.setTextColor(getResources().getColor(R.color.wrong_answer_color));
                 answer_image4.setVisibility(View.VISIBLE);
                 incorrect_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
             }
             // Disable RadioButtons of rg4
             for (int i = 0; i < rg4.getChildCount(); i++) {
@@ -204,12 +196,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
                 answer5_3.setTextColor(getResources().getColor(R.color.correct_answer_color));
                 answer_image5.setVisibility(View.VISIBLE);
                 correct_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
             } else {
                 checked_answer5.setTextColor(getResources().getColor(R.color.wrong_answer_color));
                 answer_image5.setVisibility(View.VISIBLE);
                 incorrect_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
             }
             // Disable RadioButtons of rg5
             for (int i = 0; i < rg5.getChildCount(); i++) {
@@ -223,12 +213,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
                 answer6_4.setTextColor(getResources().getColor(R.color.correct_answer_color));
                 answer_image6.setVisibility(View.VISIBLE);
                 correct_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
             } else {
                 checked_answer6.setTextColor(getResources().getColor(R.color.wrong_answer_color));
                 answer_image6.setVisibility(View.VISIBLE);
                 incorrect_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
             }
             // Disable RadioButtons of rg6
             for (int i = 0; i < rg6.getChildCount(); i++) {
@@ -242,12 +230,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
                 answer7_1.setTextColor(getResources().getColor(R.color.correct_answer_color));
                 answer_image7.setVisibility(View.VISIBLE);
                 correct_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
             } else {
                 checked_answer7.setTextColor(getResources().getColor(R.color.wrong_answer_color));
                 answer_image7.setVisibility(View.VISIBLE);
                 incorrect_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
             }
             // Disable RadioButtons of rg7
             for (int i = 0; i < rg7.getChildCount(); i++) {
@@ -261,12 +247,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
                 answer8_2.setTextColor(getResources().getColor(R.color.correct_answer_color));
                 answer_image8.setVisibility(View.VISIBLE);
                 correct_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
             } else {
                 checked_answer8.setTextColor(getResources().getColor(R.color.wrong_answer_color));
                 answer_image8.setVisibility(View.VISIBLE);
                 incorrect_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
             }
             // Disable RadioButtons of rg8
             for (int i = 0; i < rg8.getChildCount(); i++) {
@@ -280,12 +264,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
                 answer9_4.setTextColor(getResources().getColor(R.color.correct_answer_color));
                 answer_image9.setVisibility(View.VISIBLE);
                 correct_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
             } else {
                 checked_answer9.setTextColor(getResources().getColor(R.color.wrong_answer_color));
                 answer_image9.setVisibility(View.VISIBLE);
                 incorrect_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
             }
             // Disable RadioButtons of rg9
             for (int i = 0; i < rg9.getChildCount(); i++) {
@@ -299,12 +281,10 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
                 answer10_1.setTextColor(getResources().getColor(R.color.correct_answer_color));
                 answer_image10.setVisibility(View.VISIBLE);
                 correct_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.correctAnswer), Toast.LENGTH_SHORT).show();
             } else {
                 checked_answer10.setTextColor(getResources().getColor(R.color.wrong_answer_color));
                 answer_image10.setVisibility(View.VISIBLE);
                 incorrect_score++;
-                Toast.makeText(getApplicationContext(), getString(R.string.wrongAnswer), Toast.LENGTH_SHORT).show();
             }
             // Disable RadioButtons of rg10
             for (int i = 0; i < rg10.getChildCount(); i++) {

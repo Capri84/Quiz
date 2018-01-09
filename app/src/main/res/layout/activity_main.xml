@@ -13,11 +13,10 @@
         android:orientation="vertical">
 
         <ImageView
+            style="@style/quiz_night_margins"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="@dimen/layout_margin4"
             android:layout_weight="3"
-            android:scaleType="centerInside"
             android:src="@drawable/quiz_night" />
 
         <EditText
@@ -26,7 +25,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:gravity="bottom"
             android:hint="@string/players_name_hint"
             android:inputType="textCapWords" />
 
@@ -37,35 +35,26 @@
             android:text="@string/category" />
 
         <LinearLayout
+            style="@style/category_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="@dimen/padding1"
-            android:layout_marginRight="@dimen/padding1"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageButton
-                style="@style/Widget.AppCompat.Button.Borderless"
+                style="@style/em_category_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/border"
-                android:layout_marginRight="@dimen/border"
                 android:layout_weight="1"
-                android:background="@drawable/borders"
                 android:onClick="openEmojiQuiz"
-                android:scaleType="centerInside"
                 android:src="@drawable/emoji1" />
 
             <ImageButton
-                style="@style/Widget.AppCompat.Button.Borderless"
+                style="@style/inv_category_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/border"
                 android:layout_weight="1"
-                android:background="@drawable/borders"
                 android:onClick="openInventionsQuiz"
-                android:scaleType="centerInside"
                 android:src="@drawable/inventions" />
         </LinearLayout>
     </LinearLayout>
