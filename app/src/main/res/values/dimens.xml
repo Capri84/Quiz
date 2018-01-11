@@ -12,4 +12,5 @@
     <dimen name="border">2dp</dimen>
     <dimen name="emoji_quiz_text_size">44sp</dimen>
     <dimen name="inv_quiz_text_size">28sp</dimen>
+    <dimen name="view_height">1dp</dimen>
 </resources>

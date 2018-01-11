@@ -30,7 +30,6 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
     int correct_score = 0;
     // Incorrect answers counter
     int incorrect_score = 0;
-    int count_null_groups = 0;
     // Here we declare a variable to store the question number
     TextView question_number;
     // Here we declare a variable to store player's name
@@ -38,8 +37,7 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
     // Here we declare a variable for the quiz results toast
     String resultMessage;
     // Here we declare a variable to store a string "Question (current question number) out of (total number of questions)"
-    String qnum, answer9;
-    String answer10 = "";
+    String qnum, answer9, answer10;
     // This is an array of id's of question numbers
     int[] question_numbers = {R.id.inv_question1_number, R.id.inv_question2_number, R.id.inv_question3_number, R.id.inv_question4_number, R.id.inv_question5_number,
             R.id.inv_question6_number, R.id.inv_question7_number, R.id.inv_question8_number, R.id.inv_question9_number, R.id.inv_question10_number};
@@ -90,6 +88,7 @@ public class InventionsActivity extends AppCompatActivity implements View.OnClic
     public void submit() {
         correct_score = 0;
         incorrect_score = 0;
+        answer10 = "";
         if (activityInventionsBinding.radioGroup1.getCheckedRadioButtonId() == -1 && activityInventionsBinding.radioGroup2.getCheckedRadioButtonId() == -1 &&
                 activityInventionsBinding.radioGroup3.getCheckedRadioButtonId() == -1 && activityInventionsBinding.radioGroup4.getCheckedRadioButtonId() == -1 &&
                 activityInventionsBinding.radioGroup5.getCheckedRadioButtonId() == -1 && activityInventionsBinding.radioGroup6.getCheckedRadioButtonId() == -1 &&

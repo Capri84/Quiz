@@ -81,8 +81,7 @@
 
         <View
             style="@style/emoji_view_margins"
-            android:layout_width="match_parent"
-            android:layout_height="1dp" />
+            android:layout_width="match_parent" />
 
         <TextView
             android:id="@+id/question2_number"
@@ -148,8 +147,7 @@
 
         <View
             style="@style/emoji_view_margins"
-            android:layout_width="match_parent"
-            android:layout_height="1dp" />
+            android:layout_width="match_parent" />
 
         <TextView
             android:id="@+id/question3_number"
@@ -214,8 +212,7 @@
 
         <View
             style="@style/emoji_view_margins"
-            android:layout_width="match_parent"
-            android:layout_height="1dp" />
+            android:layout_width="match_parent" />
 
         <TextView
             android:id="@+id/question4_number"
@@ -281,8 +278,7 @@
 
         <View
             style="@style/emoji_view_margins"
-            android:layout_width="match_parent"
-            android:layout_height="1dp" />
+            android:layout_width="match_parent" />
 
         <TextView
             android:id="@+id/question5_number"
@@ -348,8 +344,7 @@
 
         <View
             style="@style/emoji_view_margins"
-            android:layout_width="match_parent"
-            android:layout_height="1dp" />
+            android:layout_width="match_parent" />
 
         <TextView
             android:id="@+id/question6_number"
@@ -415,8 +410,7 @@
 
         <View
             style="@style/emoji_view_margins"
-            android:layout_width="match_parent"
-            android:layout_height="1dp" />
+            android:layout_width="match_parent" />
 
         <TextView
             android:id="@+id/question7_number"
@@ -481,8 +475,7 @@
 
         <View
             style="@style/emoji_view_margins"
-            android:layout_width="match_parent"
-            android:layout_height="1dp" />
+            android:layout_width="match_parent" />
 
         <TextView
             android:id="@+id/question8_number"
@@ -548,8 +541,7 @@
 
         <View
             style="@style/emoji_view_margins"
-            android:layout_width="match_parent"
-            android:layout_height="1dp" />
+            android:layout_width="match_parent" />
 
         <TextView
             android:id="@+id/question9_number"
@@ -615,8 +607,7 @@
 
         <View
             style="@style/emoji_view_margins"
-            android:layout_width="match_parent"
-            android:layout_height="1dp" />
+            android:layout_width="match_parent" />
 
         <TextView
             android:id="@+id/question10_number"

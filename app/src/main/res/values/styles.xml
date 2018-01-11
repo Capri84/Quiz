@@ -72,7 +72,7 @@
     <!-- Emoji question number-->
     <style name="emoji_question_number">
         <item name="android:layout_marginBottom">@dimen/padding1</item>
-        <item name="android:layout_marginTop">@dimen/padding2</item>
+        <item name="android:layout_marginTop">@dimen/padding1</item>
         <item name="android:fontFamily">@font/quiz_font1</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
@@ -107,6 +107,7 @@
         <item name="android:layout_marginTop">@dimen/padding2</item>
         <item name="android:layout_marginBottom">@dimen/padding2</item>
         <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_height">@dimen/view_height</item>
     </style>
 
     <!-- Emoji buttons style-->
@@ -208,6 +209,7 @@
         <item name="android:layout_marginTop">@dimen/padding2</item>
         <item name="android:layout_marginBottom">@dimen/padding2</item>
         <item name="android:background">@color/inv_view</item>
+        <item name="android:layout_height">@dimen/view_height</item>
     </style>
 
 </resources>

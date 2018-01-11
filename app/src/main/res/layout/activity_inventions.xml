@@ -68,8 +68,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question2_number"
@@ -118,8 +117,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question3_number"
@@ -168,8 +166,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question4_number"
@@ -218,8 +215,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question5_number"
@@ -268,8 +264,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question6_number"
@@ -318,8 +313,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question7_number"
@@ -368,8 +362,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question8_number"
@@ -418,8 +411,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question9_number"
@@ -446,8 +438,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question10_number"

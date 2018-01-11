@@ -49,6 +49,14 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emoji);
+        //Method for intialization
+        initViews();
+        // Here we set numbers of the questions
+        setQuestion_numbers();
+    }
+
+    //Method for intialization
+    public void initViews() {
         // Here we initialize RadioGroups
         rg1 = findViewById(R.id.radio_group1);
         rg2 = findViewById(R.id.radio_group2);
@@ -101,8 +109,6 @@ public class EmojiActivity extends AppCompatActivity implements RadioGroup.OnChe
         buttonToMain.setOnClickListener(this);
         submitButton.setOnClickListener(this);
         shareButton.setOnClickListener(this);
-        // Here we set numbers of the questions
-        setQuestion_numbers();
     }
 
     // This method set numbers to the questions

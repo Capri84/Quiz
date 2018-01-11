@@ -56,8 +56,7 @@
 
                     <View
                         style="@style/inv_view_margins"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp" />
+                        android:layout_width="match_parent" />
 
                     <TextView
                         android:id="@+id/inv_q1_correct_answer"
@@ -77,8 +76,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question2_number"
@@ -115,8 +113,7 @@
 
                     <View
                         style="@style/inv_view_margins"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp" />
+                        android:layout_width="match_parent" />
 
                     <TextView
                         android:id="@+id/inv_q2_correct_answer"
@@ -136,8 +133,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question3_number"
@@ -174,8 +170,7 @@
 
                     <View
                         style="@style/inv_view_margins"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp" />
+                        android:layout_width="match_parent" />
 
                     <TextView
                         android:id="@+id/inv_q3_correct_answer"
@@ -195,8 +190,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question4_number"
@@ -233,8 +227,7 @@
 
                     <View
                         style="@style/inv_view_margins"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp" />
+                        android:layout_width="match_parent" />
 
                     <TextView
                         android:id="@+id/inv_q4_correct_answer"
@@ -254,8 +247,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question5_number"
@@ -292,8 +284,7 @@
 
                     <View
                         style="@style/inv_view_margins"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp" />
+                        android:layout_width="match_parent" />
 
                     <TextView
                         android:id="@+id/inv_q5_correct_answer"
@@ -313,8 +304,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question6_number"
@@ -351,8 +341,7 @@
 
                     <View
                         style="@style/inv_view_margins"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp" />
+                        android:layout_width="match_parent" />
 
                     <TextView
                         android:id="@+id/inv_q6_correct_answer"
@@ -372,8 +361,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question7_number"
@@ -410,8 +398,7 @@
 
                     <View
                         style="@style/inv_view_margins"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp" />
+                        android:layout_width="match_parent" />
 
                     <TextView
                         android:id="@+id/inv_q7_correct_answer"
@@ -431,8 +418,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question8_number"
@@ -469,8 +455,7 @@
 
                     <View
                         style="@style/inv_view_margins"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp" />
+                        android:layout_width="match_parent" />
 
                     <TextView
                         android:id="@+id/inv_q8_correct_answer"
@@ -490,8 +475,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question9_number"
@@ -528,8 +512,7 @@
 
                     <View
                         style="@style/inv_view_margins"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp" />
+                        android:layout_width="match_parent" />
 
                     <TextView
                         android:id="@+id/inv_q9_correct_answer"
@@ -549,8 +532,7 @@
 
             <View
                 style="@style/inv_view_margins"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:layout_width="match_parent" />
 
             <TextView
                 android:id="@+id/inv_question10_number"
@@ -587,8 +569,7 @@
 
                     <View
                         style="@style/inv_view_margins"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp" />
+                        android:layout_width="match_parent" />
 
                     <TextView
                         android:id="@+id/inv_q10_correct_answer"
